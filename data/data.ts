@@ -1,4 +1,8 @@
-import { navigationProps, slideProps } from "@/app/lib/types";
+import {
+  AnalyticsDataProps,
+  navigationProps,
+  slideProps,
+} from "@/app/lib/types";
 
 export const links: navigationProps[] = [
   { href: "/", route: "Home" },
@@ -65,5 +69,24 @@ export const slideImages: slideProps[] = [
     caption5: "",
     button: "Learn more",
     href: "/innitiatives",
+  },
+];
+
+export const AnalyticsData: AnalyticsDataProps[] = [
+  {
+    value: 100,
+    label: "Enterpreneurs Surpported",
+  },
+  {
+    value: 20,
+    label: "Trainings Organized",
+  },
+  {
+    value: 75,
+    label: "Community Events",
+  },
+  {
+    value: 90,
+    label: "Student Beneficiaries",
   },
 ];

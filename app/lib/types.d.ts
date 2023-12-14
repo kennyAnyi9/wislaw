@@ -42,3 +42,8 @@ export interface slideProps {
   button: string;
   href: string;
 }
+
+interface AnalyticsDataProps {
+  value: number; // Modified type from string to number
+  label: string;
+}

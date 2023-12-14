@@ -1,12 +1,19 @@
-import { navigationProps, ButtonProps, slideProps } from "./types";
+import {
+  navigationProps,
+  ButtonProps,
+  slideProps,
+  AnalyticsDataProps,
+} from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
 import Slide from "../components/slide-show";
 import Button from "../components/buttons/button";
 import localFont from "next/font/local";
+import Overview from "../components/overview";
+import { Analytics } from "../components/analytics";
 
-export type { navigationProps, ButtonProps, slideProps };
-export { Navigation, Dropdown, Slide, Button };
+export type { navigationProps, ButtonProps, slideProps, AnalyticsDataProps };
+export { Navigation, Dropdown, Slide, Button, Overview, Analytics };
 
 export const poppins = localFont({
   src: "../../public/fonts/Poppins/Poppins-Black.ttf",
