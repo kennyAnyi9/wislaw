@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&family=Hanken+Grotesk:wght@500;800&family=Lato:wght@700;900&family=Montserrat:wght@600;700&family=Poppins:wght@100;200;300;400;500;600&family=Red+Hat+Display:wght@300;700&display=swap");
-* {
-  font-family: "Red Hat Display", sans-serif;
+.sub__title {
+  @apply font-montserrat font-normal  text-lg  text-gray-800  md:mb-10 md:text-3xl;
+}
+
+.descriptive__text {
+  @apply font-montserrat text-left text-sm font-normal  text-black md:text-lg;
 }
