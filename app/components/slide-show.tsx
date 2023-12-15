@@ -15,6 +15,7 @@ const slideProperties = {
   arrows: false,
 };
 
+
 const Slide = () => {
   return (
     <>
