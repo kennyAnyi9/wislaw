@@ -3,9 +3,6 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export const MotionDiv = motion.div;
-export const MotionHeader = motion.header;
-
 const containerVariants = {
   hidden: {},
   visible: {
