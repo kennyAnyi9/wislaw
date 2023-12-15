@@ -3,6 +3,7 @@ import {
   ButtonProps,
   slideProps,
   AnalyticsDataProps,
+  beneficiaryProps,
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
@@ -11,9 +12,24 @@ import Button from "../components/buttons/button";
 import localFont from "next/font/local";
 import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
+import Beneficiaries from "../components/beneficiaries";
 
-export type { navigationProps, ButtonProps, slideProps, AnalyticsDataProps };
-export { Navigation, Dropdown, Slide, Button, Overview, Analytics };
+export type {
+  navigationProps,
+  ButtonProps,
+  slideProps,
+  AnalyticsDataProps,
+  beneficiaryProps,
+};
+export {
+  Navigation,
+  Dropdown,
+  Slide,
+  Button,
+  Overview,
+  Analytics,
+  Beneficiaries,
+};
 
 export const poppins = localFont({
   src: "../../public/fonts/Poppins/Poppins-Black.ttf",

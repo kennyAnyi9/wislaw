@@ -43,7 +43,15 @@ export interface slideProps {
   href: string;
 }
 
-interface AnalyticsDataProps {
-  value: number; // Modified type from string to number
+export interface AnalyticsDataProps {
+  value: number;
   label: string;
+}
+
+export interface beneficiaryProps {
+  image: string;
+  category: string;
+  name: string;
+  message: string;
+  position: string;
 }
