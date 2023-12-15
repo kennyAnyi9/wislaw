@@ -8,10 +8,10 @@ const Overview = () => {
       {" "}
       <div className="flex  flex-col lg:flex-row  gap-28  ">
         <div className="flex w-full gap-5 flex-col justify-center">
-          <h2 className="font-montserrat font-normal mb-5  text-lg  font-light text-gray-800  md:mb-5 md:text-3xl">
+          <h2 className="sub__title">
             Wislaw Education & Support Fund
           </h2>
-          <p className="font-montserrat text-left text-sm   text-gray-500 md:text-lg ">
+          <p className="descriptive__text">
             Wislaw Education and Support Fund, founded in 2007 is a development
             and social enterprise-oriented organisation based in Nsuta-Tarkwa,
             in the Western region of Ghana. We aim to build skilled youth as
@@ -19,10 +19,7 @@ const Overview = () => {
             necessary skills and funds they require to leverage the unique
             opportunities present in Ghana and Africa.
           </p>
-          <Button
-            text="learn more"
-            className="bg-transparent bg-orange-600 text-white"
-          />
+          <Button text="learn more" className="bg-orange-600 text-white" />
         </div>
 
         <div className="  w-full flex flex-col gap-2 ">
