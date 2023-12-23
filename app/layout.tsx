@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${lato.variable} ${fira.variable} ${hanken.variable} ${montserrat.variable} ${redhat.variable}}`}
+        className={`${poppins.variable} ${lato.variable} ${fira.variable} ${hanken.variable} ${montserrat.variable} ${redhat.variable}`}
       >
         <Navigation />
         {children}
