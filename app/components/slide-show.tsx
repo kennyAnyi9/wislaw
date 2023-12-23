@@ -56,8 +56,8 @@ const Slide = () => {
                     className="bg-transparent border border-orange-600  "
                   />
                   <Button
-                    text="About us"
-                    className="border border-orange-600 bg-orange-600 "
+                    text="Donate Now!"
+                    className="border border-orange-600 bg-orange-600"
                   />
                 </div>
               </div>
