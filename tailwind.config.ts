@@ -20,6 +20,7 @@ const config: Config = {
         hanken: ["var(--font-hanken)"],
         montserrat: ["var(--font-montserrat)"],
         redhat: ["var(--font-redhat)"],
+        video: ["var(--font-video)"],
       },
     },
   },
