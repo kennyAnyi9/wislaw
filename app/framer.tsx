@@ -3,6 +3,11 @@ import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+export const childVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
+
 const containerVariants = {
   hidden: {},
   visible: {
