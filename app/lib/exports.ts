@@ -4,6 +4,7 @@ import {
   slideProps,
   AnalyticsDataProps,
   beneficiaryProps,
+  memberProps,
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
@@ -13,6 +14,16 @@ import localFont from "next/font/local";
 import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
+import Heroine from "../components/about-us/heroine";
+import Intro from "../components/about-us/intro";
+import Why from "../components/about-us/why";
+import Mission from "../components/about-us/mission";
+import Staff from "../components/about-us/staff";
+import Board from "../components/about-us/board";
+import Video from "../components/about-us/text-video";
+import ContactForm from "../components/contact-us/form";
+import Initiatives from "../components/our-inititatives/initiatives";
+import Init from "../components/our-inititatives/init";
 
 export type {
   navigationProps,
@@ -20,6 +31,7 @@ export type {
   slideProps,
   AnalyticsDataProps,
   beneficiaryProps,
+  memberProps,
 };
 export {
   Navigation,
@@ -29,6 +41,16 @@ export {
   Overview,
   Analytics,
   Beneficiaries,
+  Heroine,
+  Intro,
+  Why,
+  Mission,
+  Staff,
+  Board,
+  Video,
+  ContactForm,
+  Initiatives,
+  Init,
 };
 
 export const poppins = localFont({
@@ -57,5 +79,10 @@ export const montserrat = localFont({
 
 export const redhat = localFont({
   src: "../../public/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf",
+  variable: "--font-redhat",
+});
+
+export const video = localFont({
+  src: "../../public/fonts/BebasNeue-Regular.ttf",
   variable: "--font-redhat",
 });

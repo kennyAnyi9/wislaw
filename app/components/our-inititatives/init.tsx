@@ -1,22 +1,18 @@
-import { beneficiaries } from "@/data/data";
+import Motion, { childVariants } from "@/app/framer";
+import React from "react";
 import Image from "next/image";
-
-import Motion, { childVariants } from "../framer";
-
-const Beneficiaries = () => {
+import { init } from "@/data/data";
+const Init = () => {
   return (
     <>
-      <section className="mb-10">
-        <h1 className="sub__title text-center">Beneficiaries Testimonies</h1>
-      </section>
-      {beneficiaries.map((item, index) => (
+      {init.map((item, index) => (
         <Motion childVariants={childVariants} key={index}>
           <section
             className={`flex flex-col  ${
               index % 2 === 0 ? " lg:flex-row" : " lg:flex-row-reverse"
             } w-full gap-10 lg:gap-28`}
           >
-            <div className="w-11/12 lg:w-1/2 relative h-[20rem] mx-auto lg:h-[40rem]">
+            <div className="w-11/12 lg:w-3/5 relative h-[10rem] mx-auto lg:h-[24rem]">
               <Image
                 src={item.image}
                 alt="logo"
@@ -41,16 +37,10 @@ const Beneficiaries = () => {
                   <circle cx="12" cy="12" r="10" />
                   <path d="m9 12 2 2 4-4" />
                 </svg>
-                {item.category}
+                {item.title}
               </div>
-              <h1 className="font-bold font-montserrat text-3xl">
-                {item.name}
-              </h1>
-              <p className="descriptive__text">{item.message}</p>
 
-              <p className="descriptive__text opacity-80">
-                {`- ${item.position}`}
-              </p>
+              <p className="descriptive__text">{item.desctiption}</p>
             </div>
           </section>
         </Motion>
@@ -59,4 +49,4 @@ const Beneficiaries = () => {
   );
 };
 
-export default Beneficiaries;
+export default Init;
