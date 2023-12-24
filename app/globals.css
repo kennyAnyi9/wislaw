@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .sub__title {
-  @apply font-montserrat font-semibold  text-lg  text-gray-800  md:mb-10 md:text-3xl;
+  @apply font-montserrat leading-tight font-normal text-lg text-gray-800  md:mb-10 md:text-3xl;
 }
 
 .descriptive__text {
