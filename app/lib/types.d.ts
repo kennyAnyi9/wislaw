@@ -55,3 +55,47 @@ export interface beneficiaryProps {
   message: string;
   position: string;
 }
+
+export interface supportedProps {
+  main: string;
+  sub: string;
+}
+
+export interface whyProps {
+  title: string;
+  description: string;
+  path1: string;
+  path2: string;
+  path3: string;
+}
+
+export interface missionProps {
+  title: string;
+  description: string;
+  path1: string;
+  path2: string;
+  path3: string;
+  cx: string;
+  cy: string;
+  radius: string;
+}
+
+export interface memberProps {
+  image: string;
+  name: string;
+  position: string;
+  url: string;
+}
+
+export interface InitiativesProps {
+  title: string;
+  description: string;
+  image: string;
+  route: string;
+}
+
+export interface InitProps {
+  image: string;
+  title: string;
+  desctiption: string;
+}
