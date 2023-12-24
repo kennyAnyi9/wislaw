@@ -3,53 +3,53 @@ import { links } from "@/data/data";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Dropdown = () => {
-  const [open, setOpen] = useState(false);
+const Dropdown = (open: boolean) => {
+  const [hidden, setHidden] = useState(false);
   return (
-    <header
-      className={` fixed inset-0  top-0 z-10 flex  transform  flex-col items-center  overflow-y-auto bg-black bg-opacity-100 text-white backdrop-blur-sm backdrop-filter lg:hidden ${
-        open ? "translate-x-0 " : "-translate-x-full"
-      } transition-transform duration-300 ease-in-out`}
-    >
-      <div className="flex h-3/4  w-10/12 flex-col justify-between py-8 ">
-        <div className="mt-20 flex flex-col justify-start">
-          <Link href="/donate">
-            <button
-              type="submit"
-              className="font-wislaw5 mb-5 h-10 w-full   rounded bg-orange-500 px-4  text-xl font-normal text-white"
-              onClick={() => setTimeout(() => setOpen(!open), 100)}
+    <>
+      <header
+        className={` ${
+          open ? "hidden" : "flex"
+        } z-20 flex p-2 flex-col w-11/12 h-4/5 rounded-xl absolute -top-5 my-10 backdrop-blur-lg  bg-black  bg-opacity-50 mx-auto lg:hidden`}
+      >
+        <div className="flex-2   p-2 flex w-full h-20 justify-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ef7d00"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lg:hidden "
+            onClick={() => (hidden ? setHidden(false) : setHidden(true))}
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </div>
+        <div className=" p-5 flex-col flex justify-between w-full h-fit gap-5 ">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              className=" text-white hover:text-orange-400 font-montserrat "
+              href={link.href}
             >
-              Donate
-            </button>
-          </Link>
-          {links.map((link, index) => (
-            <React.Fragment key={index}>
-              <Link
-                href={link.href}
-                onClick={() => setTimeout(() => setOpen(!open), 100)}
-                className="font-wislaw5 my-3 flex w-full cursor-pointer flex-row text-lg font-light text-gray-300 "
-              >
-                {link.route}
-              </Link>
-              <div className="border-t border-gray-600"></div>
-            </React.Fragment>
+              {link.route}
+            </Link>
           ))}
         </div>
+        <div className="flex-2 border-t gap-10 border-gray-600 text-white p-4 text-sm border-opacity-50">
+          <Link href="/donate" className="text-orange-600">
+            DONATE
+          </Link>
 
-        <div className="relative top-12  flex w-full flex-col-reverse items-center justify-center">
-          <div className="felx-col mt-2 flex    justify-center  ">
-            {/* {socialMediaData.map((item, index) => (
-              <Link key={index} href={item.url}>
-                <IconComponent name={item.iconName} />
-              </Link>
-            ))} */}
-          </div>
-          <div className="font-wislaw5 mx-auto mt-3 text-center text-sm font-light text-gray-400 md:text-xl">
-            &copy; WISLAW {new Date().getFullYear()} . All rights reserved
-          </div>
+          <h1>WISLAW EDUCATION AND SUPPORT FUND</h1>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 
