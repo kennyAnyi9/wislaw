@@ -3,20 +3,23 @@
 @tailwind utilities;
 
 .sub__title {
-  @apply font-montserrat leading-tight font-normal text-lg text-gray-800  md:mb-10 md:text-3xl;
+  @apply font-hanken leading-tight font-normal text-lg text-gray-800   md:text-3xl;
 }
 
 .descriptive__text {
-  @apply font-montserrat text-left text-sm font-normal  text-black md:text-base;
+  @apply font-hanken opacity-90 font-light text-left text-sm  text-black md:text-base;
 }
 .descriptive__text__center {
-  @apply font-montserrat text-center text-sm font-normal  text-black md:text-base;
+  @apply font-hanken text-center opacity-90 font-light text-sm   text-black md:text-base;
 }
 
+.sub__title__secondary {
+  @apply font-hanken leading-tight font-normal text-lg text-gray-800   md:text-2xl;
+}
 .video__section {
   overflow: hidden;
   position: relative;
-  height: 100vh;
+  height: 70vh;
   object-fit: cover;
 }
 .video__text {
@@ -26,11 +29,11 @@
   right: 0;
   height: 100%;
   background-color: rgb(0, 0, 0);
-  line-height: 68vw;
+  line-height: 45vw;
   margin-left: -2vw;
   /* user-select: none; */
   mix-blend-mode: multiply;
-  font-size: 58vw;
+  font-size: 45vw;
 }
 .video__title {
   color: #ffffff;
