@@ -20,6 +20,8 @@ export default function Home() {
         <Analytics />
       </section>
       <section className="relative mx-auto w-11/12 lg:w-3/4 flex flex-col gap-20">
+        <h1 className="sub__title text-center">Our Initiatives</h1>
+
         <Initiatives />
       </section>
       <section className="relative mx-auto w-11/12  flex flex-col gap-20">
