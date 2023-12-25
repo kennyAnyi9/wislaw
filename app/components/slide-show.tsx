@@ -39,14 +39,6 @@ const Slide = () => {
               <div className="absolute w-full h-screen flex gap-10 lg:mt-10 justify-center items-center flex-col  mx-auto ">
                 <div className="flex flex-col gap-3 w-11/12 lg:w-3/5">
                   <span className=" text-3xl lg:text-6xl text-white font-montserrat font-normal text-center leading-tight ">
-                    {/* <Typed
-                    strings={[
-                      `${slideImage.caption1}${slideImage.caption2} ${slideImage.caption3}\n${slideImage.caption4}\n${slideImage.caption5}`,
-                    ]}
-                    typeSpeed={60}
-                    backSpeed={0}
-                    loop
-                  /> */}
                     {slideImage.caption1}
                   </span>
                 </div>
