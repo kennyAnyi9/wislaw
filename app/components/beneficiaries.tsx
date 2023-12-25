@@ -26,7 +26,7 @@ const Beneficiaries = () => {
             </div>
 
             <div className="flex flex-col gap-5 mx-auto w-11/12 lg:w-1/2   justify-center">
-              <div className=" inline-flex gap-2 font-montserrat ">
+              <div className=" inline-flex gap-2 font-hanken ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -43,14 +43,10 @@ const Beneficiaries = () => {
                 </svg>
                 {item.category}
               </div>
-              <h1 className="font-bold font-montserrat text-3xl">
-                {item.name}
-              </h1>
+              <h1 className="sub__title__secondary ">{item.name}</h1>
               <p className="descriptive__text">{item.message}</p>
 
-              <p className="descriptive__text opacity-80">
-                {`- ${item.position}`}
-              </p>
+              <p className="descriptive__text ">{`- ${item.position}`}</p>
             </div>
           </section>
         </Motion>

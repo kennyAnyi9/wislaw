@@ -22,7 +22,7 @@ const Init = () => {
             </div>
 
             <div className="flex flex-col gap-5 mx-auto w-11/12 lg:w-1/2   justify-center">
-              <div className=" inline-flex gap-2 font-montserrat ">
+              <div className=" inline-flex gap-2 sub__title ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

@@ -11,16 +11,16 @@ export const Analytics = () => {
 
   return (
     <div
-      className="grid grid-cols-2 md:grid-cols-4 flex flex-row justify-center items-center md:gap-20 lg:gap-44"
+      className="grid grid-cols-2 md:grid-cols-4 lg:flex flex-row justify-center items-center md:gap-20 lg:gap-44"
       ref={ref}
     >
       {AnalyticsData.map((data, index) => (
         <div key={index} className="">
-          <div className=" text-gray-800 font-momntserrat text-center  text-3xl md:text-5xl lg:text-7xl font-bold">
+          <div className=" text-orange-500  text-center  text-3xl md:text-5xl lg:text-7xl font-normal flex justify-center items-center">
             {inView ? <CountUp end={data.value} /> : "0"}+
           </div>
           <br />
-          <h4 className="font-montserrat text-center text-xs md:text-lg ">
+          <h4 className=" text-center text-xs md:text-base font-hanken">
             {data.label}
           </h4>
           <br />

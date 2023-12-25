@@ -19,9 +19,7 @@ const Initiatives = () => {
               />
             </div>
             <div className="w-full h-44 p-3 flex flex-col gap-3">
-              <h1 className="font-montserrat leading-tight font-normal  text-lg lg:text-xl text-gray-800  ">
-                {item.title}
-              </h1>
+              <h1 className="sub__title__secondary">{item.title}</h1>
               <h1 className="text-sm opacity-50">{item.description}</h1>
             </div>
           </div>
