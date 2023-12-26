@@ -99,3 +99,10 @@ export interface InitProps {
   title: string;
   desctiption: string;
 }
+
+export interface donateProps {
+  id: number;
+  title: string;
+  description: string;
+  details: string;
+}

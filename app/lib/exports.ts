@@ -5,6 +5,7 @@ import {
   AnalyticsDataProps,
   beneficiaryProps,
   memberProps,
+  donateProps,
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
@@ -24,6 +25,7 @@ import Video from "../components/about-us/text-video";
 import ContactForm from "../components/contact-us/form";
 import Initiatives from "../components/our-inititatives/initiatives";
 import Init from "../components/our-inititatives/init";
+import Accordion from "../components/donations/other-ways";
 
 export type {
   navigationProps,
@@ -32,6 +34,7 @@ export type {
   AnalyticsDataProps,
   beneficiaryProps,
   memberProps,
+  donateProps,
 };
 export {
   Navigation,
@@ -51,6 +54,7 @@ export {
   ContactForm,
   Initiatives,
   Init,
+  Accordion,
 };
 
 export const poppins = localFont({

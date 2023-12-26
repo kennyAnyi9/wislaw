@@ -3,6 +3,7 @@ import {
   InitProps,
   InitiativesProps,
   beneficiaryProps,
+  donateProps,
   memberProps,
   missionProps,
   navigationProps,
@@ -317,5 +318,27 @@ export const init: InitProps[] = [
     title: "Community Economic & Livelihoods(CEL) Skills Training",
     desctiption:
       "CEL skils training is a program that aims to empower the local people in selected communities with the skills and resources they need to improve their economic and social well-being. The program is part of Wislaw’s vision to create opportunities for Ghana’s sustainable development through technology and innovation by adopting a holistic and inclusive approach that considers the needs, aspirations, and potentials of the participants. By providing training in various areas such as digital literacy, entrepreneurship, financial literacy, agribusiness, and vocational skills through funding, mentorship, networking, and market linkages for the participants, We hope to inspire and support the participants to become agents of change in their communities and contribute to the national development agenda.",
+  },
+];
+
+export const donate: donateProps[] = [
+  {
+    id: 1,
+    title: "Donate by check in Ghana",
+    description:
+      "check in must be made payable to wislaw eduction and support fund. Mail your check to:",
+    details: "PO Box HP NaN",
+  },
+  {
+    id: 2,
+    title: "Donate by bank transfer in Ghana",
+    description: "",
+    details: "details 2",
+  },
+  {
+    id: 3,
+    title: "Donate by gifting",
+    description: "",
+    details: " details three",
   },
 ];

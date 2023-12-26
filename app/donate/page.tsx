@@ -1,34 +1,53 @@
-import Image from "next/image";
-
-import Motion, { childVariants } from "../framer";
+import { Button, Accordion } from "../lib/exports";
 const Donate = () => {
   return (
-    <div className="flex min-h-screen flex-col  relative top-24  gap-10">
-      <div className="w-[99%] relative h-[20rem] mx-auto lg:h-[30rem]">
-        <Image
-          src="/images/v1.jpg"
-          alt="logo"
-          fill
-          className="w-full h-full object-cover rounded-xl"
-        />
-        {/* <div className="absolute inset-0 bg-black bg-opacity-60 rounded-xl"></div> */}
-        <section className="absolute w-full h-full  mx-auto flex flex-col  items-center gap-5 top-1/3 justify-end">
-          <Motion childVariants={childVariants}>
-            <div className="min-w-[40rem] h-72 bg-white shadow-md rounded-xl p-5">
-              <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-orange-600 to-amber-300 text-center font-bold font-montserrat text-5xl max-w-4xl leading-snug">
-                Donate
-              </h1>
-              <h1 className=" descriptive__text__center">
-                Your and support will help us reach a larger community to make a
-                greater impact
-              </h1>
+    <div className="flex min-h-screen  flex-col md:flex-row  relative top-36 w-4/5 justify-center  mx-auto gap-64">
+      <section className="flex flex-col gap-10">
+        <h1 className="text-3xl lg:text-6xl font-hanken font-normal">
+          How to Donate
+        </h1>
+        <p className="descriptive__text">
+          Your donations and support will help us reach a larger community to
+          make a greater impact
+        </p>
+
+        <div className="flex flex-col lg:flex-row gap-64">
+          <div className="flex-1 gap-10 flex flex-col">
+            <h1 className="sub__title">Donate Online</h1>
+
+            <p className="descriptive__text">
+              WESFUND accepts donations from nearly everywhere in the world. If
+              your local currency is not listed, you can still donate! Your
+              donation will be processed in the currency you select. Conversion
+              rates and foreign transaction fees apply
+            </p>
+
+            <div className="flex flex-row gap-5 lg:gap-10 ">
+              <Button
+                text="One-time"
+                className="border border-orange-600 bg-orange-600"
+              />
+              <Button
+                text="Recurring"
+                className="border border-orange-600 bg-orange-600"
+              />
+              <Button
+                text="Donate in USD"
+                className="border border-orange-600 bg-orange-600"
+              />
             </div>
-          </Motion>
-        </section>
-      </div>
-      <section className="w-5/6 flex flex-col gap-10 "></section>
+          </div>
+          <section className="flex flex-col flex-1 ">
+            <h1 className="sub__title">Other Ways to Give</h1>
+            <Accordion />
+          </section>
+        </div>
+      </section>
     </div>
   );
 };
 
 export default Donate;
+
+//https://paystack.com/pay/wesfund
+//https://paystack.com/pay/wesfund-recurring
