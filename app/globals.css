@@ -7,10 +7,10 @@
 }
 
 .descriptive__text {
-  @apply font-hanken opacity-90 font-light text-left text-sm  text-black md:text-base;
+  @apply font-hanken opacity-70 font-light text-left text-sm  text-black md:text-xl;
 }
 .descriptive__text__center {
-  @apply font-hanken text-center opacity-90 font-light text-sm   text-black md:text-base;
+  @apply font-hanken text-center opacity-70 font-light text-sm   text-black md:text-xl;
 }
 
 .sub__title__secondary {
