@@ -22,23 +22,7 @@ const Init = () => {
             </div>
 
             <div className="flex flex-col gap-5 mx-auto w-11/12 lg:w-1/2   justify-center">
-              <div className=" inline-flex gap-2 sub__title ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ef7d00"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
-                {item.title}
-              </div>
+              <div className=" inline-flex gap-2 sub__title ">{item.title}</div>
 
               <p className="descriptive__text">{item.desctiption}</p>
             </div>
