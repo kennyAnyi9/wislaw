@@ -54,7 +54,7 @@ export const slideImages: slideProps[] = [
     href: "/innitiatives",
   },
   {
-    url: "/images/tech1.jpg",
+    url: "/images/new-slide.jpg",
 
     caption1:
       " Empowering the youth with skills to thrive in the 21st century ",
@@ -109,7 +109,7 @@ export const beneficiaries: beneficiaryProps[] = [
   },
 
   {
-    image: "/images/ent1.jpg",
+    image: "/images/vivian.jpg",
     category: "BUSINESS COACHING",
     name: "Vivian Badwoba Kwofie",
     message:
@@ -275,46 +275,46 @@ export const initiatives: InitiativesProps[] = [
     title: "Community",
     description:
       "We engage with Ghana’s Nsuta-Tarkwa communities, conducting outreach and fostering collaboration. We support through Services like health, education, and sanitation to improve locals’ life quality.",
-    image: "/images/v1.jpg",
+    image: "/images/init2.jpg",
     route: "/#education",
   },
   {
     title: "Education",
     description:
       "We are dedicated to empowering Ghana’s youth, particularly in rural areas, with quality education and skills training. We view education as a catalyst for individual potential and socio-economic growth",
-    image: "/images/v1.jpg",
+    image: "/images/init1.jpg",
     route: "/#education",
   },
   {
     title: "Entrepreneurship",
     description:
       "We support entrepreneurs and small businesses in Ghana, particularly in rural and marginalized areas. We see entrepreneurship as a driver of economic growth and social innovation, providing impactful business ideas.",
-    image: "/images/v1.jpg",
+    image: "/images/init3.jpg",
     route: "/#education",
   },
 ];
 
 export const init: InitProps[] = [
   {
-    image: "/images/v1.jpg",
+    image: "/images/digitalskills.jpg",
     title: "Digital Skills Training For Kids",
     desctiption:
       "We offer digital skills training for kids in basic schools, where they learn the basics of computer programming with python, web development and more. Our aim is to inspire the next generation of innovators and problem-solvers who can use technology to create positive change in their communities and beyond.Our digital skills training is delivered through online platforms, and community centers, where we provide access to computers, internet, and mentors. We also organize hackathons, competitions, to showcase the projects and talents of our kids.",
   },
   {
-    image: "/images/v1.jpg",
+    image: "/images/women-ent.jpg",
     title: "The Women’s Entrepreneurship and Livelihoods Initiative",
     desctiption:
       "The Women’s Entrepreneurship and Livelihoods Initiative (WELI) is a project that aims to empower women and girls in Ghana through entrepreneurship and skills development. WELI provides women and girls with access to finance, business training, mentorship, networking, and market linkages. WELI also supports women and girls to develop their leadership, confidence, and self-reliance. WELI is aligned with the Sustainable Development Goals of gender equality, decent work, and economic growth.",
   },
   {
-    image: "/images/v1.jpg",
+    image: "/images/womenent.jpg",
     title: "The Women’s Entrepreneurship and Livelihoods Initiative",
     desctiption:
       "The Women’s Entrepreneurship and Livelihoods Initiative (WELI) is part of our efforts to empower women and girls in Ghana through entrepreneurship and skills development. WELI provides women and girls with access to finance, business training, mentorship, networking, and market linkages. WELI also supports women and girls to develop their leadership, confidence, and self-reliance. WELI is aligned with the Sustainable Development Goals of gender equality, decent work, and economic growth.",
   },
   {
-    image: "/images/v1.jpg",
+    image: "/images/community8.png",
     title: "Community Economic & Livelihoods(CEL) Skills Training",
     desctiption:
       "CEL skils training is a program that aims to empower the local people in selected communities with the skills and resources they need to improve their economic and social well-being. The program is part of Wislaw’s vision to create opportunities for Ghana’s sustainable development through technology and innovation by adopting a holistic and inclusive approach that considers the needs, aspirations, and potentials of the participants. By providing training in various areas such as digital literacy, entrepreneurship, financial literacy, agribusiness, and vocational skills through funding, mentorship, networking, and market linkages for the participants, We hope to inspire and support the participants to become agents of change in their communities and contribute to the national development agenda.",
