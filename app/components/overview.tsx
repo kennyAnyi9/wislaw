@@ -6,11 +6,9 @@ const Overview = () => {
   return (
     <>
       {" "}
-      <div className="flex  flex-col lg:flex-row  gap-28  ">
-        <div className="flex w-full gap-5 flex-col justify-center">
-          <h2 className="sub__title">
-            Wislaw Education & Support Fund
-          </h2>
+      <div className="flex  flex-col lg:flex-row gap-28 ">
+        <div className="flex w-11/12  lg:w-1/2 gap-5 flex-col justify-center mx-auto">
+          <h2 className="sub__title">Wislaw Education & Support Fund</h2>
           <p className="descriptive__text">
             Wislaw Education and Support Fund, founded in 2007 is a development
             and social enterprise-oriented organisation based in Nsuta-Tarkwa,
@@ -22,7 +20,7 @@ const Overview = () => {
           <Button text="learn more" className="bg-orange-600 text-white" />
         </div>
 
-        <div className="  w-full flex flex-col gap-2 ">
+        <div className="w-11/12 lg:w-1/2 flex flex-col gap-2 mx-auto">
           <div className="flex flex-row  w-full flex-1 gap-2">
             <div className=" w-full h-64 flex-1">
               <Image
@@ -30,7 +28,7 @@ const Overview = () => {
                 width={500}
                 height={500}
                 className="w-full h-full object-cover rounded-xl "
-                src="/images/ent1.jpg"
+                src="/images/suport.jpeg"
               />
             </div>
             <div className=" w-full h-64 flex-1 ">
@@ -39,7 +37,7 @@ const Overview = () => {
                 width={500}
                 height={500}
                 className="w-full h-full object-cover rounded-xl "
-                src="/images/dark.jpg"
+                src="/images/overview1.jpeg"
               />
             </div>
           </div>
@@ -49,7 +47,7 @@ const Overview = () => {
               width={500}
               height={500}
               className="w-full h-full object-cover rounded-xl "
-              src="/images/v1.jpg"
+              src="/images/school-1.jpg"
             />
           </div>
         </div>

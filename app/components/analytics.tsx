@@ -16,11 +16,11 @@ export const Analytics = () => {
     >
       {AnalyticsData.map((data, index) => (
         <div key={index} className="">
-          <div className=" text-orange-500  text-center  text-3xl md:text-5xl lg:text-7xl font-normal flex justify-center items-center">
+          <div className="text-orange-500 font-hanken text-center text-4xl md:text-5xl lg:text-7xl font-normal flex justify-center items-center">
             {inView ? <CountUp end={data.value} /> : "0"}+
           </div>
           <br />
-          <h4 className=" text-center text-xs md:text-base font-hanken">
+          <h4 className=" text-center text-sm md:text-base font-hanken">
             {data.label}
           </h4>
           <br />
