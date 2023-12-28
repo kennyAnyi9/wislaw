@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {
-  Navigation,
-  fira,
-  hanken,
-  lato,
-  montserrat,
-  poppins,
-  redhat,
-} from "./lib/exports";
+import { Navigation, hanken, montserrat, video } from "./lib/exports";
 
 export const metadata: Metadata = {
   title: "WesFund | NGO",
@@ -23,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${hanken.variable} ${montserrat.variable} ${redhat.variable}`}
+        className={`${hanken.variable} ${montserrat.variable} ${video.variable}`}
       >
         <Navigation />
         {children}

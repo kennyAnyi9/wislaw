@@ -14,12 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        lato: ["var(--font-lato)"],
-        fira: ["var(--font-fira)"],
         hanken: ["var(--font-hanken)"],
         montserrat: ["var(--font-montserrat)"],
-        redhat: ["var(--font-redhat)"],
+
         video: ["var(--font-video)"],
       },
     },
