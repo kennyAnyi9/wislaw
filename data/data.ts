@@ -100,7 +100,7 @@ export const AnalyticsData: AnalyticsDataProps[] = [
 
 export const beneficiaries: beneficiaryProps[] = [
   {
-    image: "/images/dark.jpg",
+    image: "/images/beneficiary.jpg",
     category: " TVET",
     name: "John  Doe",
     message:
