@@ -72,11 +72,11 @@ const ContactForm = () => {
   return (
     <>
       <form
-        className="relative min-h-screen top-20 w-11/12 md:w-4/5  text-black gap-5 flex flex-col 
+        className="relative min-h-screen lg:h-screen top-28 lg:top-20 w-11/12 md:w-4/5 text-black gap-5 flex flex-col 
                   mx-auto  "
         onSubmit={handleSubmit}
       >
-        <h1 className="text-2xl md:text-5xl font-montserrat font-bold lg:mt-20 ">
+        <h1 className="text-2xl md:text-5xl font-hanken font-bold lg:mt-20 ">
           Get in <span className="text-orange-500">touch</span>{" "}
         </h1>
         <h2 className="desctiptive__text">
@@ -87,7 +87,7 @@ const ContactForm = () => {
           type="text"
           placeholder="name"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400   border border-opacity-30 rounded-md text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
           onChange={handleNameChange}
           value={name}
           required
@@ -98,7 +98,7 @@ const ContactForm = () => {
           type="email"
           placeholder="email"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400   border border-opacity-30 rounded-md text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
           onChange={handleEmailChange}
           value={email}
           required
@@ -109,7 +109,7 @@ const ContactForm = () => {
           type="text"
           placeholder="phone"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400   border border-opacity-30 rounded-md text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
           onChange={handlePhoneChange}
           value={phone}
           required
@@ -131,7 +131,7 @@ const ContactForm = () => {
 
         <textarea
           name="message"
-          className="bg-transparent w-full max-h-28 outline-none text-[#2d5242] dark:text-green-500 border-[#1e352b] dark:border-gray-400  border  rounded-md border-opacity-30 resize-none flex-grow text-sm p-2"
+          className="bg-transparent w-full max-h-28 outline-none text-[#2d5242] dark:text-green-500 border-[#1e352b] dark:border-gray-400  border  rounded-sm border-opacity-30 resize-none flex-grow text-sm p-2"
           placeholder="type your message here"
           onChange={handleMessageChange}
           value={message}
@@ -139,7 +139,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className=" w-full lg:w-36 flex flex-row h-9 px-2 py-2 lg:px-2 bg-orange-600  font-semibold text-sm rounded-md justify-center items-center  text-white hover:bg-orange-500"
+          className=" w-full lg:w-36 flex flex-row h-9 px-2 py-2 lg:px-2 bg-orange-600  font-semibold text-sm rounded-sm justify-center items-center  text-white hover:bg-orange-500"
           onClick={() => {
             email !== "" && phone && name !== "" ? setLoading(true) : null;
           }}
@@ -163,9 +163,7 @@ const ContactForm = () => {
               <rect width="20" height="16" x="2" y="4" rx="2" />
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
-            <h1 className="font-montserrat font-semibold">
-              info@wislawedufund.org
-            </h1>
+            <h1 className="font-hanken">info@wislawedufund.org</h1>
           </div>
           <div className="flex flex-row gap-2">
             <svg
@@ -182,7 +180,7 @@ const ContactForm = () => {
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
 
-            <h1 className="font-montserrat font-semibold">+233 506 20 1255</h1>
+            <h1 className="font-hanken">+233 506 20 1255</h1>
           </div>
         </section>
       </form>
