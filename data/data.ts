@@ -66,7 +66,7 @@ export const slideImages: slideProps[] = [
     href: "/innitiatives",
   },
   {
-    url: "/images/ent1.jpg",
+    url: "/images/ent.jpg",
 
     caption1:
       " Helping entrepreneurs apply innovation and technology to their businesses ",
