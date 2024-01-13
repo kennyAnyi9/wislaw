@@ -6,12 +6,11 @@ import {
   Why,
   Board,
   Video,
-} from "../lib/exports";
+} from "../../lib/exports";
 
 const AboutUs = () => {
   return (
     <div className=" flex min-h-screen flex-col gap-20 ">
-      <Video />
       <Intro />
       <Why />
       <Mission />

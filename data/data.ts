@@ -9,7 +9,7 @@ import {
   navigationProps,
   slideProps,
   whyProps,
-} from "@/app/lib/types";
+} from "@/lib/types";
 
 export const links: navigationProps[] = [
   { href: "/", route: "Home" },
@@ -66,7 +66,7 @@ export const slideImages: slideProps[] = [
     href: "/innitiatives",
   },
   {
-    url: "/images/ent.jpg",
+    url: "/images/ent1.jpg",
 
     caption1:
       " Helping entrepreneurs apply innovation and technology to their businesses ",
