@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactForm } from "../lib/exports";
+import { ContactForm } from "../../lib/exports";
 import Image from "next/image";
 
 const Page = () => {
