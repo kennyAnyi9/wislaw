@@ -19,7 +19,7 @@ const Overview = () => {
           </p>
           <Button
             text="learn more"
-            className="bg-transparent border border-orange-600 "
+            className="bg-transparent border border-orange-600 text-black"
           />
         </div>
 

@@ -20,7 +20,9 @@ export const Analytics = () => {
             {inView ? <CountUp end={data.value} /> : "0"}+
           </div>
           <br />
-          <h4 className=" description_2 text-center">{data.label}</h4>
+          <h4 className="text-sm opacity-70 md:text-lg text-center">
+            {data.label}
+          </h4>
           <br />
         </div>
       ))}
