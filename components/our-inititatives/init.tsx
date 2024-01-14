@@ -12,7 +12,7 @@ const Init = () => {
               index % 2 === 0 ? " lg:flex-row" : " lg:flex-row-reverse"
             } w-full gap-10 lg:gap-28`}
           >
-            <div className="w-11/12 lg:w-2/5 relative h-[10rem] mx-auto lg:h-[40rem]">
+            <div className="w-11/12 lg:w-2/5 relative h-[15rem] mx-auto lg:h-[40rem]">
               <Image
                 src={item.image}
                 alt="logo"
