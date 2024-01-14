@@ -83,10 +83,10 @@
   @apply text-xl md:text-2xl;
 }
 .description_1 {
-  @apply text-lg opacity-90 md:text-xl;
+  @apply text-lg opacity-70 md:text-xl;
 }
 .description_2 {
-  @apply text-base opacity-90 md:text-lg;
+  @apply text-base opacity-70 md:text-lg;
 }
 
 .heading_land {
