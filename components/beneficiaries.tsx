@@ -11,7 +11,7 @@ const Beneficiaries = () => {
       </section>
       {beneficiaries.map((item, index) => (
         <Motion childVariants={childVariants} key={index}>
-          <section className=" w-11/12 lg:w-2/3 mx-auto">
+          <section className="w-11/12 lg:w-2/3 mx-auto mb-10">
             <div className="flex flex-col gap-5 mx-auto w-11/12 justify-center">
               <p className="description_1 italic">{`"${item.message}"`}</p>
               <div className="flex flex-row gap-3">
