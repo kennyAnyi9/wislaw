@@ -6,7 +6,7 @@ const Overview = () => {
   return (
     <>
       {" "}
-      <div className="flex  flex-col lg:flex-row gap-28 ">
+      <div className="flex  flex-col lg:flex-row gap-10 lg:gap-28 ">
         <div className="flex w-11/12  lg:w-1/2 gap-5 flex-col justify-center mx-auto">
           <h2 className="heading_land">Wislaw Education & Support Fund</h2>
           <p className="description_1">
@@ -17,7 +17,10 @@ const Overview = () => {
             necessary skills and funds they require to leverage the unique
             opportunities present in Ghana and Africa.
           </p>
-          <Button text="About us" className="bg-orange-600 text-white" />
+          <Button
+            text="learn more"
+            className="bg-transparent border border-orange-600 "
+          />
         </div>
 
         <div className="w-11/12 lg:w-1/2 flex flex-col gap-2 mx-auto">
