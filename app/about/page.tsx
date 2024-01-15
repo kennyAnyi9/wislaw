@@ -11,6 +11,7 @@ import {
 const AboutUs = () => {
   return (
     <div className=" flex min-h-screen flex-col gap-20 ">
+      <Video />
       <Intro />
       <Why />
       <Mission />
