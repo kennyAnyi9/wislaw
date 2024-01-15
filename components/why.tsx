@@ -7,12 +7,12 @@ const Why = () => {
     <>
       <section className="w-4/5 mx-auto flex flex-col  items-center gap-20 justify-center">
         <Motion childVariants={childVariants}>
-          <h1 className="sub__title text-center">
+          <h1 className="heading_land text-center">
             {" "}
             Why Wislaw Education and Support (WES) Fund?
           </h1>
 
-          <p className="descriptive__text__center ">
+          <p className="description_1 text-center mt-5">
             WES Fund is committed to pioneering a grassroots developmental
             approach with the youth at the forefront of implementing
             progressively the African Union's Agenda 2063 and the United Nations
@@ -45,8 +45,8 @@ const Why = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-5">
-                  <h2 className="sub__title__secondary">{item.title}</h2>
-                  <p className="descriptive__text">{item.description}</p>
+                  <h2 className="heading_2">{item.title}</h2>
+                  <p className="description_1">{item.description}</p>
                 </div>
               </div>
             ))}

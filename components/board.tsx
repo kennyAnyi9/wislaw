@@ -6,8 +6,8 @@ import React from "react";
 
 const Board = () => {
   return (
-    <section className="w-11/12 mx-auto flex flex-col  items-center  justify-center">
-      <h1 className="sub__title">Meet our board</h1>
+    <section className="w-11/12 mx-auto flex flex-col gap-5 lg:gap-10 items-center  justify-center">
+      <h1 className="heading_land">Meet our board</h1>
       <div className="w-full flex flex-row justify-center items-center  flex-wrap ">
         {board.map((item, index) => (
           <div
@@ -24,7 +24,9 @@ const Board = () => {
                 priority
               />
               <div className="font-wislaw3 absolute left-6 top-56 z-20 flex h-20 w-4/5 flex-col items-center rounded-xl bg-slate-200 justify-center shadow-2xl drop-shadow-xl">
-                <div className="px-1 text-slate-950 text-sm">{item.name}</div>
+                <div className="px-1 text-slate-950 text-sm font-semibold">
+                  {item.name}
+                </div>
                 <div className="text-slate-600 text-sm">{item.position}</div>
                 <Link href={item.url} className="text-3xl">
                   <svg

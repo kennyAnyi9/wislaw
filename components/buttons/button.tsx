@@ -4,7 +4,7 @@ import React from "react";
 
 function Button({ className, text, ...rest }: ButtonProps) {
   // Combine the default button classes with any custom classes passed
-  const buttonClasses = `text-white py-2 lg:py-3 font-montserrat rounded-sm  w-28 lg:w-36 ${
+  const buttonClasses = `py-2 lg:py-3 rounded-sm  w-28 lg:w-36 ${
     className || ""
   }`;
 

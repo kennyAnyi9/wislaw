@@ -8,7 +8,7 @@ const Intro = () => {
       <section className=" w-4/5 lg:w-3/5 mx-auto mt-10 lg:mt-20 flex flex-row items-center gap-20 justify-center">
         <div className="lg:w-2/3 ">
           <Motion childVariants={childVariants}>
-            <p className="descriptive__text__center md:desctiptive__text text-left">
+            <p className="description_1 text-center lg:text-left">
               Wislaw Education and Support Fund, founded in 2007 is a
               development and social enterprise-oriented organisation based in
               Nsuta-Tarkwa, in the Western region of Ghana. We aim to build
@@ -29,8 +29,8 @@ const Intro = () => {
               className="flex-1 flex flex-col justify-center items-center bg-emerald-50"
               key={index}
             >
-              <h1 className="font-bold font-montserrat">Over {item.value} </h1>
-              <h1> {item.label}</h1>
+              <h1 className="heading_2">Over {item.value} </h1>
+              <h1 className="description_1"> {item.label}</h1>
             </div>
           ))}
         </div>

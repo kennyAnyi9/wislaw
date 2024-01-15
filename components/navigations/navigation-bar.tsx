@@ -29,7 +29,7 @@ const Navigation = () => {
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  className=" hover:text-orange-400 font-montserrat font-normal"
+                  className=" hover:text-orange-400 font-normal"
                   href={link.href}
                 >
                   {link.route}
@@ -37,7 +37,7 @@ const Navigation = () => {
               ))}
             </div>
             <div
-              className="px-6 py-2 bg-orange-500 rounded-sm justify-center items-center 
+              className="px-6 py-2 bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out rounded-sm justify-center items-center 
                       gap-2.5 hidden lg:flex text-white text-base font-montserrat font-semibold"
             >
               <Link href="/donate ">DONATE</Link>
