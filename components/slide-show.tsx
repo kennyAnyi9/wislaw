@@ -43,12 +43,12 @@ const Slide = () => {
                 </div>
                 <div className="flex flex-row gap-5 lg:gap-10 ">
                   <Button
-                    text="learn more"
-                    className="bg-transparent border border-orange-600  "
+                    text="Learn more"
+                    className="bg-transparent border hover:bg-orange-500 text-white font-semibold transition duration-500 ease-in-out border-orange-600"
                   />
                   <Button
-                    text="Donate Now!"
-                    className="border border-orange-600 bg-orange-600"
+                    text="Donate now!"
+                    className="border border-orange-600 text-white font-semibold bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out"
                   />
                 </div>
               </div>

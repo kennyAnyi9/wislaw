@@ -76,18 +76,16 @@ const ContactForm = () => {
                   mx-auto  "
         onSubmit={handleSubmit}
       >
-        <h1 className="text-2xl md:text-5xl font-hanken font-bold lg:mt-20 ">
+        <h1 className=" heading_1 lg:mt-20 ">
           Get in <span className="text-orange-500">touch</span>{" "}
         </h1>
-        <h2 className="desctiptive__text">
-          we would be happy to hear from you
-        </h2>
+        <h2 className="description_1">we would be happy to hear from you</h2>
         <input
           name="name"
           type="text"
           placeholder="name"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 focus:outline-none  border border-opacity-30 rounded-sm text-sm"
           onChange={handleNameChange}
           value={name}
           required
@@ -98,7 +96,7 @@ const ContactForm = () => {
           type="email"
           placeholder="email"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 focus:outline-none  dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
           onChange={handleEmailChange}
           value={email}
           required
@@ -109,7 +107,7 @@ const ContactForm = () => {
           type="text"
           placeholder="phone"
           maxLength={50}
-          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
+          className="w-full bg-transparent p-2 border-[#1e352b] text-[#2d5242] dark:text-green-500 focus:outline-none  dark:border-gray-400 border border-opacity-30 rounded-sm text-sm"
           onChange={handlePhoneChange}
           value={phone}
           required
@@ -122,6 +120,7 @@ const ContactForm = () => {
           value={source}
           onChange={handleSourceChange}
           required
+          className="description_2"
         >
           <option value="-">How did you hear about us?</option>
           <option value="Social Media">Social media</option>
@@ -144,10 +143,10 @@ const ContactForm = () => {
             email !== "" && phone && name !== "" ? setLoading(true) : null;
           }}
         >
-          {!loading ? "Send message" : "Sending..."}
+          {!loading ? "Send" : "Sending..."}
         </button>
 
-        <section className="flex flex-col lg:flex-row gap-8 lg:gap-16 mt-5">
+        {/* <section className="flex flex-col lg:flex-row gap-8 lg:gap-16 mt-5">
           <div className="flex flex-row gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +181,7 @@ const ContactForm = () => {
 
             <h1 className="font-hanken">+233 506 20 1255</h1>
           </div>
-        </section>
+        </section> */}
       </form>
     </>
   );

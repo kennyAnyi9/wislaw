@@ -19,7 +19,7 @@ const Overview = () => {
           </p>
           <Button
             text="learn more"
-            className="bg-transparent border border-orange-600 text-black"
+            className="bg-white border border-orange-600 text-black hover:bg-orange-500 hover:text-white transition duration-500 ease-in-out"
           />
         </div>
 

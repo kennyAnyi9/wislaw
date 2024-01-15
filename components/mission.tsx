@@ -32,10 +32,8 @@ const Mission = () => {
                   </svg>
                 </div>
                 <div className="flex flex-col gap-5">
-                  <h2 className="sub__title__secondary text-center">
-                    {item.title}
-                  </h2>
-                  <p className="descriptive__text__center">
+                  <h2 className="heading_2 text-center">{item.title}</h2>
+                  <p className="description_1 text-center">
                     {item.description}
                   </p>
                 </div>

@@ -43,7 +43,7 @@ export function TabsDemo() {
           </CardHeader>
 
           <CardFooter>
-            <Button className="bg-orange-500">Donate now</Button>
+            <Button className="">Donate now</Button>
           </CardFooter>
         </Card>
       </TabsContent>
