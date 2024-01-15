@@ -96,3 +96,27 @@
 .description_card {
   @apply text-sm opacity-70 font-normal md:text-base;
 }
+
+.video__section {
+  overflow: hidden;
+  position: relative;
+
+  object-fit: cover;
+}
+.video__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  line-height: 55vw;
+  margin-left: -2vw;
+  /* user-select: none; */
+  mix-blend-mode: multiply;
+  font-size: 45vw;
+}
+.video__title {
+  color: #ffffff;
+  letter-spacing: -2vw;
+}
