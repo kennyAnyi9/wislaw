@@ -14,8 +14,8 @@ import {
 export const links: navigationProps[] = [
   { href: "/", route: "Home" },
   { href: "/about", route: "About" },
-  { href: "/contact", route: "Contact" },
   { href: "/innitiatives", route: "Initiatives" },
+  { href: "/contact", route: "Contact" },
 ];
 
 export const slideImages: slideProps[] = [
@@ -102,9 +102,9 @@ export const beneficiaries: beneficiaryProps[] = [
   {
     image: "/images/beneficiary.jpg",
     category: " TVET",
-    name: "John  Doe",
+    name: "Betty Larkor Addo",
     message:
-      "Thanks to the training provided by Wislaw, I have acquired the ability to maintain accurate records, a skill that has proven immensely beneficial in keeping pace with my workload. As a designer, this training has provided me with a distinct edge, preventing me from simply following the crowd. This advantage has been instrumental in not only setting myself apart but also enabling me to allocate a salary for myself regularly. As a result of this training, I have  witnessed substantial growth in my business. ",
+      "Wislaw’s training has enhanced my record-keeping skills, given me a unique edge in design, enabled a steady income, and spurred my business growth.",
     position: "Entrepreneur",
   },
 
@@ -113,7 +113,7 @@ export const beneficiaries: beneficiaryProps[] = [
     category: "BUSINESS COACHING",
     name: "Vivian Badwoba Kwofie",
     message:
-      "Hello, I am the CEO of AJ Vees Enterprise(Shitor production). The training I received from WISLAW has positively impacted my business. Despite joining the training late, I quickly caught up and learned valuable skills. Before the training, I faced challenges as a startup, but the guidance helped me market my business, attract investors, and improve financial management. Additionally, I learned to reinvest in my business and expanded my network with fellow entrepreneurs. The training has been instrumental in transforming my business into a successful venture..",
+      "As the CEO of AJ Vees Enterprise, the training from WISLAW significantly improved my business. It helped me overcome startup challenges, enhance marketing, attract investors, and manage finances better. The training also taught me the importance of reinvestment and networking with other entrepreneurs, leading to business success.",
     position: " Entrepreneur, CEO of AJ Vees Enterprise",
   },
 ];

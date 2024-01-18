@@ -25,6 +25,7 @@ import Video from "../components/text-video";
 import ContactForm from "../components/contact-us/form";
 import Initiatives from "../components/our-inititatives/initiatives";
 import Init from "../components/our-inititatives/init";
+import { Footer } from "@/components/navigations/footer";
 
 export type {
   navigationProps,
@@ -53,6 +54,7 @@ export {
   ContactForm,
   Initiatives,
   Init,
+  Footer,
 };
 
 export const hanken = localFont({

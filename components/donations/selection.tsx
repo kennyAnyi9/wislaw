@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -28,7 +29,11 @@ export function TabsDemo() {
           </CardHeader>
           <CardContent className="space-y-2"></CardContent>
           <CardFooter>
-            <Button className="bg-orange-500 animate-bounce">Donate now</Button>
+            <Link href="https://paystack.com/pay/wesfund">
+              <Button className="bg-orange-500 animate-bounce">
+                Donate now
+              </Button>{" "}
+            </Link>
           </CardFooter>
         </Card>
       </TabsContent>
@@ -43,7 +48,9 @@ export function TabsDemo() {
           </CardHeader>
 
           <CardFooter>
-            <Button className="">Donate now</Button>
+            <Link href="https://paystack.com/pay/wesfund-recurring">
+              <Button className="">Donate now</Button>
+            </Link>
           </CardFooter>
         </Card>
       </TabsContent>

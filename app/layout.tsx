@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navigation, hanken, montserrat, video } from "../lib/exports";
+import { Footer, Navigation, hanken, montserrat, video } from "../lib/exports";
 
 export const metadata: Metadata = {
   title: "Wislaw Education & Support Fund | NGO",
@@ -17,6 +17,7 @@ export default function RootLayout({
       <body className={``}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   );
