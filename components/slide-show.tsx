@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 import { Fade } from "react-slideshow-image";
-
 import "react-slideshow-image/dist/styles.css";
 import { slideImages } from "@/data/data";
 import { Button } from "../lib/exports";
@@ -42,14 +41,18 @@ const Slide = () => {
                   </span>
                 </div>
                 <div className="flex flex-row gap-5 lg:gap-10 ">
-                  <Button
-                    text="Learn more"
-                    className="bg-transparent border hover:bg-orange-500 text-white font-semibold transition duration-500 ease-in-out border-orange-600"
-                  />
-                  <Button
-                    text="Donate now!"
-                    className="border border-orange-600 text-white font-semibold bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out"
-                  />
+                  <Link href="/initiatives">
+                    <Button
+                      text="Learn more"
+                      className="bg-transparent border hover:bg-orange-500 text-white font-semibold transition duration-500 ease-in-out border-orange-600"
+                    />
+                  </Link>
+                  <Link href="/donate">
+                    <Button
+                      text="Donate now!"
+                      className="border border-orange-600 text-white font-semibold bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out"
+                    />{" "}
+                  </Link>
                 </div>
               </div>
             </Motion>
