@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../lib/exports";
 import Image from "next/image";
+import Link from "next/link";
 
 const Overview = () => {
   return (
@@ -17,10 +18,12 @@ const Overview = () => {
             necessary skills and funds they require to leverage the unique
             opportunities present in Ghana and Africa.
           </p>
-          <Button
-            text="learn more"
-            className="bg-white border border-orange-600 text-black hover:bg-orange-500 hover:text-white transition duration-500 ease-in-out"
-          />
+          <Link href="/about">
+            <Button
+              text="learn more"
+              className="bg-white border border-orange-600 text-black font-semibold hover:bg-orange-500 hover:text-white transition duration-500 ease-in-out"
+            />
+          </Link>
         </div>
 
         <div className="w-11/12 lg:w-1/2 flex flex-col gap-2 mx-auto">
