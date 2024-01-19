@@ -8,7 +8,7 @@ import { links } from "@/data/data";
 const Navigation = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="flex justify-center items-center">
+    <header className=" hidden lg:flex justify-center items-center">
       <section className="max-w-screen fixed top-0 z-10  w-screen overflow-hidden bg-black">
         <div className="z-50 m-auto flex h-20  w-10/12 flex-row justify-between">
           <div className="flex items-center">
@@ -16,9 +16,9 @@ const Navigation = () => {
               <div className="relative right-5 ">
                 <Image
                   alt="logo"
-                  height="44"
-                  width="175"
-                  src="/images/logo3.png"
+                  height="100"
+                  width="120"
+                  src="/images/wislaw.png"
                 />
               </div>
             </Link>
