@@ -14,22 +14,24 @@ export function AccordionDemo() {
       className="w-full mx-auto lg:w-[30rem]"
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger>Donation by check</AccordionTrigger>
+        <AccordionTrigger>Donation by check in GH Cedis</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          A check in GH cedis or other convertible currencies must be made
+          payable to Wislaw Education and Support Fund. <br /> Mail your check
+          to:
+          <br />
+          Wislaw Education and Support Fund. PO Box (some random bibi) Nsuta
+          Tarkwa, WR/GH
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>Donation through gifting</AccordionTrigger>
-        <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
-        </AccordionContent>
-      </AccordionItem>
+
       <AccordionItem value="item-3">
         <AccordionTrigger>Donation through bank</AccordionTrigger>
         <AccordionContent>
-          Yes. It's animated by default, but you can disable it if you prefer.
+          Bank: Zenith Bank
+          <br /> Account name: Wislaw Education and Support Fund
+          <br /> Account Number: 60121011708 <br />
+          Swift Code ZEBLGHAC
         </AccordionContent>
       </AccordionItem>
     </Accordion>
