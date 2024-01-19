@@ -89,6 +89,10 @@
   @apply text-base opacity-70 md:text-lg;
 }
 
+.description_1_footer {
+  @apply text-gray-100 text-2xl;
+}
+
 .heading_land {
   @apply font-semibold text-2xl md:text-3xl;
 }
@@ -114,9 +118,9 @@
   margin-left: -2vw;
   /* user-select: none; */
   mix-blend-mode: multiply;
-  font-size: 45vw;
+  font-size: 65vw;
 }
 .video__title {
   color: #ffffff;
-  letter-spacing: -2vw;
+  letter-spacing: -3vw;
 }
