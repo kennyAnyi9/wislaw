@@ -1,17 +1,33 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export const Footer = () => {
   return (
-    <div>
-      <footer className=" relative z-10 mt-auto">
-        <div className="bg-stone-900 md:flex md:items-center ">
-          <div className=" relative  flex h-20 flex-col items-center  py-2 md:m-auto   md:justify-center lg:w-4/5 lg:flex-row lg:justify-center  ">
-            <div className="m-auto  text-xs font-normal text-slate-200 md:text-xl ">
-              {" "}
-              Copyright &copy; Wislaw {new Date().getFullYear()} . All rights
-              reserved{" "}
-            </div>
-            <div className="m-auto flex w-36 flex-row justify-around text-3xl text-white lg:relative ">
+    <>
+      <footer className="bg-zinc-800 flex flex-col border-t mt-5 border-gray-200 ">
+        <div
+          className="flex max-md:flex-col
+        flex-wrap justify-between gap-5 sm:px-16 px-6 py-10"
+        >
+          <div
+            className="flex flex-col justify-start  
+            items-start gap-6"
+          >
+            <h1 className="description_1_footer">Wesfund</h1>
+            <div className="mb-20 flex w-36 flex-row justify-around text-3xl text-white lg:relative ">
+              <Link href="https://twitter.com/Wislaw_edu_fund">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 1200 1227"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
+                    fill="white"
+                  />
+                </svg>
+              </Link>
               <Link href="https://www.linkedin.com/company/wislaw-education-and-support-fund/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,22 +46,6 @@ export const Footer = () => {
                   <circle cx="4" cy="4" r="2" />
                 </svg>
               </Link>
-              <Link href="https://twitter.com/Wislaw_edu_fund">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-twitter"
-                >
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-                </svg>
-              </Link>
               <Link href="https://www.facebook.com/wislawedufund/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +62,7 @@ export const Footer = () => {
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </Link>
+
               <Link href="https://www.instagram.com/wislaw_edu_fund/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +82,76 @@ export const Footer = () => {
                 </svg>
               </Link>
             </div>
+
+            <p className="text-base font-semibold text-gray-200">
+              &copy; {new Date().getFullYear()} Wislaw, Inc. All Rights Reserved
+            </p>
           </div>
+          <section className="flex flex-col gap-8 lg:gap-16 mt-5">
+            <div className="flex flex-row gap-10 mb-20">
+              <Link href="/" className="text-white font-semibold opacity-90">
+                Home
+              </Link>
+              <Link href="/" className="text-white font-semibold opacity-90">
+                About
+              </Link>
+
+              <Link href="/" className="text-white font-semi-bold opacity-90">
+                Donate
+              </Link>
+              <Link href="/" className="text-white font-semibold opacity-90">
+                Privacy Policy
+              </Link>
+            </div>
+
+            <section className="flex flex-row gap-10 ">
+              <div className="flex flex-row gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <h1 className="text-white font-semi-bold opacity-90">
+                  info@wislawedufund.org
+                </h1>
+              </div>
+              <div className="flex flex-row gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-white"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+
+                <h1 className="text-white font-semi-bold opacity-90">
+                  +233 506 20 1255
+                </h1>
+              </div>
+            </section>
+          </section>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
+
+//  Copyright &copy; Wislaw {new Date().getFullYear()} . All rights
+//             reserved{" "}
