@@ -8,7 +8,7 @@ const Tabs = () => {
   return (
     <>
       {" "}
-      <section className="flex h-full flex-col gap-10 w-11/12 lg:w-4/5 mx-auto ">
+      <section className="flex h-full flex-col gap-10 w-11/12 lg:w-4/5 mx-auto mt-28 ">
         <h1 className="heading_1">Donate Now!</h1>
         <p className="description_1">
           Your donations and support will help us reach a larger community to
