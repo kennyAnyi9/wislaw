@@ -8,7 +8,7 @@ const Staff = () => {
   return (
     <section className="w-11/12 mx-auto flex flex-col  gap-5 lg:gap-10 items-center  justify-center">
       <h1 className="heading_land">Meet our staff</h1>
-      <div className="w-full flex flex-row justify-center items-center  flex-wrap  ">
+      <div className="w-full flex flex-row justify-center items-center flex-wrap">
         {members.map((item, index) => (
           <div
             className="mx-10 rounded-sm shadow-xl drop-shadow-2xl h-[18rem] w-[14rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out "

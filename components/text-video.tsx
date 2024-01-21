@@ -9,7 +9,7 @@ const Video: React.FC = () => {
       <video src="/dadwen.mp4" loop autoPlay muted className="w-full"></video>
 
       <div className="video__text ">
-        <h1 className={`${video.className} video__title text-center`}>ngo:)</h1>
+        <h1 className={`${video.className} video__title text-center`}>n.g.o</h1>
       </div>
     </div>
   );

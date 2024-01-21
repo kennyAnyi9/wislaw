@@ -4,8 +4,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
+  const pathname = usePathname(); // Add this line to get the current path
+
   const [open, setOpen] = useState(false);
   return (
     <header className=" hidden lg:flex justify-center items-center">
@@ -29,7 +32,9 @@ const Navigation = () => {
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  className=" hover:text-orange-400 font-normal"
+                  className={`hover:text-orange-400 font-normal ${
+                    pathname === link.href ? "text-orange-500" : ""
+                  }`}
                   href={link.href}
                 >
                   {link.route}

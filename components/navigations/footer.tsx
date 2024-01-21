@@ -1,16 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
+
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-zinc-800 flex flex-col border-t mt-5 border-gray-200 ">
-        <div
-          className="flex max-md:flex-col
-        flex-wrap justify-between gap-5 sm:px-16 px-6 py-10"
-        >
+      <footer className="bg-zinc-800 flex flex-col border-t mt-5 z-20 border-gray-200 ">
+        <div className="flex flex-col md:flex-row justify-between gap-5 sm:px-16 px-6 py-10">
           <div
             className="flex flex-col justify-start  
-            items-start gap-6"
+            items-start gap-6 w-full md:w-1/2"
           >
             <h1 className="description_1_footer">Wesfund</h1>
             <div className=" lg:mb-20 flex w-36 flex-row justify-around text-white lg:relative ">
@@ -75,7 +72,6 @@ export const Footer = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-instagram"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -83,13 +79,49 @@ export const Footer = () => {
                 </svg>
               </Link>
             </div>
-            <div className="flex flex-col md:flex-row gap-5">
-              <h1 className="text-white font-semi-bold opacity-90">
-                Telephone: +233 506 20 1255
-              </h1>
-              <h1 className="text-white font-semi-bold opacity-90">
-                Email: info@wislawedufund.org
-              </h1>
+
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
+              <div className="flex flex-row gap-2 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="16" height="13" x="6" y="4" rx="2" />
+                  <path d="m22 7-7.1 3.78c-.57.3-1.23.3-1.8 0L6 7" />
+                  <path d="M2 8v11c0 1.1.9 2 2 2h14" />
+                </svg>
+                <h1 className="text-white font-semi-bold opacity-90">
+                  {" "}
+                  info@wislawedufund.org
+                </h1>
+              </div>
+              <div className="flex flex-row gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ffffff"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                  <path d="M14.05 6A5 5 0 0 1 18 10" />
+                </svg>
+                <h1 className="text-white font-semi-bold opacity-90">
+                  +233 506 20 1255
+                </h1>
+              </div>
             </div>
           </div>
           <section className="flex flex-col gap-10 lg:gap-16 mt-5 justify-between">

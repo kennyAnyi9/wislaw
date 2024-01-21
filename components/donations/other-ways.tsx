@@ -11,7 +11,7 @@ export function AccordionDemo() {
     <Accordion
       type="single"
       collapsible
-      className="w-full mx-auto lg:w-[30rem]"
+      className="w-full  mx-auto lg:w-[30rem]"
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>Donation by check in GH Cedis</AccordionTrigger>
