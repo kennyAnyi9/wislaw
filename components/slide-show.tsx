@@ -36,7 +36,7 @@ const Slide = () => {
             <Motion childVariants={childVariants}>
               <div className="absolute w-full h-screen flex gap-10 lg:mt-10 justify-center items-center flex-col  mx-auto ">
                 <div className="flex flex-col gap-3 w-11/12 lg:w-3/5">
-                  <span className=" text-3xl lg:text-6xl text-white font-montserrat font-normal text-center leading-tight ">
+                  <span className=" text-3xl md:text-5xl lg:text-6xl text-white font-montserrat font-normal text-center leading-tight ">
                     {slideImage.caption1}
                   </span>
                 </div>

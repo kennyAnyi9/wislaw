@@ -11,7 +11,7 @@ const Board = () => {
       <div className="w-full flex flex-row justify-center items-center  flex-wrap ">
         {board.map((item, index) => (
           <div
-            className="mx-5  rounded-sm shadow-xl drop-shadow-2xl h-[18rem] w-[14rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out "
+            className="mx-5 rounded-sm shadow-xl drop-shadow-2xl h-[18rem] w-[16rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out "
             key={index}
           >
             <div className="relative">
@@ -23,7 +23,7 @@ const Board = () => {
                 className="mt-6 rounded-2xl"
                 priority
               />
-              <div className="font-wislaw3 absolute left-6 top-56 z-20 flex h-20 w-4/5 flex-col items-center rounded-xl bg-slate-200 justify-center shadow-2xl drop-shadow-xl">
+              <div className="absolute left-6 top-[15rem] z-20 flex h-20 w-4/5 flex-col items-center rounded-xl bg-slate-200 justify-center shadow-2xl drop-shadow-xl">
                 <div className="px-1 text-slate-950 text-sm font-semibold">
                   {item.name}
                 </div>

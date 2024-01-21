@@ -30,7 +30,7 @@ export function TabsDemo() {
           <CardContent className="space-y-2"></CardContent>
           <CardFooter>
             <Link href="https://paystack.com/pay/wesfund">
-              <Button className="bg-orange-500 animate-bounce">
+              <Button className="bg-orange-500 animate-bounce hover:bg-orange-600">
                 Donate now
               </Button>{" "}
             </Link>
@@ -42,14 +42,18 @@ export function TabsDemo() {
           <CardHeader>
             <h1 className="heading_2">Donate regularly</h1>
             <p className="description_2">
-              You can make donations every now and then, safely online. <br />
+              Automate your donation process if you wish to give at regular
+              intervals
+              <br />
               Click below to start donating.
             </p>
           </CardHeader>
 
           <CardFooter>
             <Link href="https://paystack.com/pay/wesfund-recurring">
-              <Button className="">Donate now</Button>
+              <Button className="bg-orange-500 hover:bg-orange-600">
+                Donate now
+              </Button>
             </Link>
           </CardFooter>
         </Card>
