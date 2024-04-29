@@ -1,66 +1,51 @@
 "use client";
+import { motion } from "framer-motion";
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Fade } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-import { slideImages } from "@/data/data";
-import { Button } from "../lib/exports";
-import Motion from "../app/framer";
+import { ImagesSlider } from "./ui/image-slider";
+import { Card } from "./hero-card";
 
-const slideProperties = {
-  duration: 15000,
-  transitionDuration: 1500,
-  arrows: false,
-};
-
-const childVariants = {
-  hidden: { opacity: 0, y: -20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-};
-
-const Slide = () => {
+export function Slide() {
+  const images = [
+    "/images/first_slide.jpg",
+    "/images/v1.jpg",
+    "/images/new-slide.jpg",
+  ];
   return (
-    <>
-      <Fade {...slideProperties}>
-        {slideImages.map((slideImage, index) => (
-          <section className="relative top-0 w-full h-screen " key={index}>
-            <Image
-              alt="logo"
-              fill
-              className="w-full h-full object-cover "
-              src={slideImage.url}
-            />
-
-            <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-            <Motion childVariants={childVariants}>
-              <div className="absolute w-full h-screen flex gap-10 lg:mt-10 justify-center items-center flex-col  mx-auto ">
-                <div className="flex flex-col gap-3 w-11/12 lg:w-3/5">
-                  <span className=" text-3xl md:text-5xl lg:text-6xl text-white font-montserrat font-normal text-center leading-tight ">
-                    {slideImage.caption1}
-                  </span>
-                </div>
-                <div className="flex flex-row gap-5 lg:gap-10 ">
-                  <Link href="/initiatives">
-                    <Button
-                      text="Learn more"
-                      className="bg-transparent border hover:bg-orange-500 text-white font-semibold transition duration-500 ease-in-out border-orange-600"
-                    />
-                  </Link>
-                  <Link href="/donate">
-                    <Button
-                      text="Donate now!"
-                      className="border border-orange-600 text-white font-semibold bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out"
-                    />{" "}
-                  </Link>
-                </div>
-              </div>
-            </Motion>
-          </section>
-        ))}
-      </Fade>
-    </>
+    <ImagesSlider className="h-[40rem]" images={images} overlay="true">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -80,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="z-50 mx-5 lg:mx-20 flex flex-row  items-center gap-28"
+      >
+        <motion.div className=" flex flex-col lg:items-center">
+          <motion.p className="font-bold text-5xl text-left md:text-center max-w-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+            Wislaw Education <br className="hidden " />
+            & <br className="lg:hidden" />
+            Support Fund
+          </motion.p>
+          <p className="text-gray-300  text-sm line-clamp-4 md:line-clamp-2 text-left md:text-center max-w-2xl lg:text-lg font-normal">
+            Wislaw Education and Support Fund, founded in 2007 is a development
+            and social enterprise-oriented organisation based in Nsuta-Tarkwa,
+            in the Western region of Ghana. We aim to build skilled youth as
+            agents of change in their communities by equipping them with the
+            necessary skills and funds they require to leverage the unique
+            opportunities present in Ghana and Africa.
+          </p>
+          <button className="w-fit px-4 py-2 lg:mx-auto backdrop-blur-sm border bg-orange-300/10 border-orange-500/20 text-white rounded-xl relative mt-4">
+            <span>Learn more →</span>
+            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4  from-transparent via-orange-500 to-transparent" />
+          </button>
+        </motion.div>
+      </motion.div>
+    </ImagesSlider>
   );
-};
-
-export default Slide;
+}

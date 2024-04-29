@@ -5,14 +5,15 @@ import Image from "next/image";
 import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
 import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
 
 const Navigation = () => {
-  const pathname = usePathname(); // Add this line to get the current path
+  const pathname = usePathname();
 
   const [open, setOpen] = useState(false);
   return (
     <header className=" hidden lg:flex justify-center items-center">
-      <section className="max-w-screen fixed top-0 z-10  w-screen overflow-hidden bg-black">
+      <section className="max-w-screen fixed top-0 z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
         <div className="z-50 m-auto flex h-20  w-10/12 flex-row justify-between">
           <div className="flex items-center">
             <Link href="/">
@@ -32,7 +33,7 @@ const Navigation = () => {
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  className={`hover:text-orange-400 font-normal ${
+                  className={`text-gray-500 hover:text-orange-400 font-normal ${
                     pathname === link.href ? "text-orange-500" : ""
                   }`}
                   href={link.href}
@@ -41,12 +42,13 @@ const Navigation = () => {
                 </Link>
               ))}
             </div>
-            <div
-              className="px-6 py-2 bg-orange-500 hover:bg-orange-600 transition duration-500 ease-in-out rounded-sm justify-center items-center 
-                      gap-2.5 hidden lg:flex text-white text-base font-montserrat font-semibold"
+            <Button
+              asChild
+              variant="ghost"
+              className="bg-orange-600 hover:bg-orange-500"
             >
-              <Link href="/donate ">DONATE</Link>
-            </div>
+              <Link href={""}>DONATE</Link>
+            </Button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"

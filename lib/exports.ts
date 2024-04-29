@@ -9,7 +9,7 @@ import {
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
-import Slide from "../components/slide-show";
+
 import Button from "../components/buttons/button";
 import localFont from "next/font/local";
 import Overview from "../components/overview";
@@ -26,6 +26,13 @@ import ContactForm from "../components/contact-us/form";
 import Initiatives from "../components/our-inititatives/initiatives";
 import Init from "../components/our-inititatives/init";
 import { Footer } from "@/components/navigations/footer";
+import Hero from "@/components/about-us/hero";
+import { Slide } from "@/components/slide-show";
+import CallToDonate from "@/components/landing/call-to-donate";
+import StayConnected from "@/components/landing/stay-connected";
+import WeHaveDonated from "@/components/landing/we-have-donated";
+import { CallToAction } from "@/components/call-to-action";
+import { Globe } from "@/components/landing/globe";
 
 export type {
   navigationProps,
@@ -55,19 +62,10 @@ export {
   Initiatives,
   Init,
   Footer,
+  Hero,
+  CallToAction,
+  CallToDonate,
+  WeHaveDonated,
+  StayConnected,
+  Globe,
 };
-
-export const hanken = localFont({
-  src: "../public/fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf",
-  variable: "--font-hanken",
-});
-
-export const montserrat = localFont({
-  src: "../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf",
-  variable: "--font-montserrat",
-});
-
-export const video = localFont({
-  src: "../public/fonts/BebasNeue-Regular.ttf",
-  variable: "--font-video",
-});

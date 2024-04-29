@@ -6,14 +6,18 @@ import Motion, { childVariants } from "../app/framer";
 const Beneficiaries = () => {
   return (
     <>
-      <section className="mb-10">
-        <h1 className="heading_land text-center">Beneficiaries Testimonies</h1>
+      <section className="mb-10 text-center">
+        <p>Testimonials</p>
+        <h1 className=" text-5xl">Our Beneficiaries</h1>
+        <p className="text-gray-400 text-sm">
+          Read the stories of those we have helped
+        </p>
       </section>
-      {beneficiaries.map((item, index) => (
-        <Motion childVariants={childVariants} key={index}>
-          <section className="w-11/12 lg:w-2/3 mx-auto mb-10">
-            <div className="flex flex-col gap-5 mx-auto w-11/12 justify-center">
-              <p className="description_1 italic">{`"${item.message}"`}</p>
+      <section className="w-11/12 lg:w-4/5 mx-auto gap-10 mb-10 grid grid-cols-1 lg:grid-cols-2">
+        {beneficiaries.map((item, index) => (
+          <Motion childVariants={childVariants} key={index}>
+            <div className="flex flex-col gap-5 mx-auto justify-center">
+              <p className="description_1 ">{`"${item.message}"`}</p>
               <div className="flex flex-row gap-3">
                 <Avatar className="w-16 h-16">
                   <AvatarImage src={item.image} />
@@ -26,9 +30,9 @@ const Beneficiaries = () => {
                 </div>
               </div>
             </div>
-          </section>
-        </Motion>
-      ))}
+          </Motion>
+        ))}
+      </section>
     </>
   );
 };

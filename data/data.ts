@@ -16,6 +16,7 @@ export const links: navigationProps[] = [
   { href: "/about", route: "About" },
   { href: "/innitiatives", route: "Initiatives" },
   { href: "/contact", route: "Contact" },
+  { href: "/news", route: "News" },
 ];
 
 export const slideImages: slideProps[] = [
@@ -100,21 +101,20 @@ export const AnalyticsData: AnalyticsDataProps[] = [
 
 export const beneficiaries: beneficiaryProps[] = [
   {
-    image: "/images/beneficiary.jpg",
-    category: " TVET",
-    name: "Betty Larkor Addo",
-    message:
-      "Wislaw’s training has enhanced my record-keeping skills, given me a unique edge in design, enabled a steady income, and spurred my business growth.",
-    position: "Entrepreneur",
-  },
-
-  {
     image: "/images/vivian.jpg",
     category: "BUSINESS COACHING",
     name: "Vivian Badwoba Kwofie",
     message:
       "As the CEO of AJ Vees Enterprise, the training from WISLAW significantly improved my business. It helped me overcome startup challenges, enhance marketing, attract investors, and manage finances better. The training also taught me the importance of reinvestment and networking with other entrepreneurs, leading to business success.",
     position: " Entrepreneur, CEO of AJ Vees Enterprise",
+  },
+  {
+    image: "/images/beneficiary.jpg",
+    category: " TVET",
+    name: "Betty Larkor Addo",
+    message:
+      "Wislaw’s training has enhanced my record-keeping skills, given me a unique edge in design, enabled a steady income, and spurred my business growth.",
+    position: "Entrepreneur",
   },
 ];
 
@@ -200,25 +200,25 @@ export const board: memberProps[] = [
     url: "https://www.linkedin.com/in/wisdom-adjei-mensah-chmc-33069b15/",
   },
   {
-    image: "/images/wisdom.webp",
+    image: "/images/Lawrencia.jpg",
     name: "Lawrencia Adjei-Mensah",
     position: "Co-Founder",
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
+  // {
+  //   image: "/images/wisdom.webp",
+  //   name: "Benjamin Dzidular Gamey",
+  //   position: "Member",
+  //   url: "https://www.linkedin.com/in/benjamin-gamey-77031b9b",
+  // },
   {
-    image: "/images/wisdom.webp",
-    name: "Benjamin Dzidular Gamey",
-    position: "Member",
-    url: "https://www.linkedin.com/in/benjamin-gamey-77031b9b",
-  },
-  {
-    image: "/images/wisdom.webp",
+    image: "/images/edward.webp",
     name: "Edward Kwaku Kassah",
     position: "Member",
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
   {
-    image: "/images/wisdom.webp",
+    image: "/images/david.webp",
     name: "Fianu David Dzotsi",
     position: "Secretary",
     url: "https://www.linkedin.com/in/fianu-david-dzotsi-82a3601b1/",
@@ -227,47 +227,47 @@ export const board: memberProps[] = [
 
 export const members: memberProps[] = [
   {
-    image: "/images/wisdom.webp",
+    image: "/images/david.webp",
     name: "Fianu David Dzotsi",
     position: "Manager",
     url: "https://www.linkedin.com/in/fianu-david-dzotsi-82a3601b1/",
   },
   {
-    image: "/images/wisdom.webp",
+    image: "/images/mercy.png",
     name: "Mercy Adoley Quaye",
     position: "Tech Lead",
     url: "https://www.linkedin.com/in/mercy-quaye/",
   },
   {
-    image: "/images/wisdom.webp",
+    image: "/images/Daddy_k.jpg",
     name: "Listowell Peter Krah",
     position: "Finance Lead",
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
+  // {
+  //   image: "/images/wisdom.webp",
+  //   name: "Joel Nsafoah",
+  //   position: "Media Lead",
+  //   url: "https://www.linkedin.com/in/joel-nsafoah-80a36b217/",
+  // },
+  // {
+  //   image: "/images/wisdom.webp",
+  //   name: "Oswald Ayepah",
+  //   position: "Media",
+  //   url: "https://www.linkedin.com/in/oswald-ayepah-652828232/",
+  // },
   {
-    image: "/images/wisdom.webp",
-    name: "Joel Nsafoah",
-    position: "Media Lead",
-    url: "https://www.linkedin.com/in/joel-nsafoah-80a36b217/",
-  },
-  {
-    image: "/images/wisdom.webp",
-    name: "Oswald Ayepah",
-    position: "Media",
-    url: "https://www.linkedin.com/in/oswald-ayepah-652828232/",
-  },
-  {
-    image: "/images/wisdom.webp",
+    image: "/images/kennedy.webp",
     name: "Kennedy Anyidoho",
     position: "Volunteer",
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
-  {
-    image: "/images/wisdom.webp",
-    name: "Janet Frimpong",
-    position: "Volunteer",
-    url: "https://www.linkedin.com/in/frimpong-janet-b849a7245",
-  },
+  // {
+  //   image: "/images/wisdom.webp",
+  //   name: "Janet Frimpong",
+  //   position: "Volunteer",
+  //   url: "https://www.linkedin.com/in/frimpong-janet-b849a7245",
+  // },
 ];
 
 export const initiatives: InitiativesProps[] = [

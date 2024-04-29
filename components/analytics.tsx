@@ -3,6 +3,8 @@ import { AnalyticsData } from "@/data/data";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { Card } from "./hero-card";
+import { Globe } from "@/lib/exports";
 
 export const Analytics = () => {
   const { ref, inView } = useInView({
@@ -11,21 +13,27 @@ export const Analytics = () => {
 
   return (
     <div
-      className="grid grid-cols-2 lg:flex flex-row justify-center items-center md:gap-20 lg:gap-44"
+      className="relative  flex flex-col lg:flex-row p-10 w-screen gap-10 lg:gap-0 mx-auto h-full  lg:h-[30rem]  justify-center items-center "
       ref={ref}
     >
-      {AnalyticsData.map((data, index) => (
-        <div key={index} className="">
-          <div className="text-orange-500  text-center text-4xl md:text-6xl lg:text-7xl font-semibold flex justify-center items-center">
-            {inView ? <CountUp end={data.value} /> : "0"}+
+      <section className="w-11/12 lg:w-1/2 text-white grid grid-cols-2  gap-5 m-auto">
+        {AnalyticsData.map((data, index) => (
+          <div key={index} className="">
+            <h1 className="text-center text-4xl md:text-7xl font-semibold  ">
+              {inView ? <CountUp end={data.value} /> : "0"}+
+            </h1>
+            <br />
+            <h4 className="line-clamp-2 text-center max-w-2xl text-lg">
+              {data.label}
+            </h4>
+            <br />
           </div>
-          <br />
-          <h4 className="text-sm opacity-70 md:text-lg text-center">
-            {data.label}
-          </h4>
-          <br />
-        </div>
-      ))}
+        ))}
+      </section>
+      <section className="w-11/12 lg:w-1/2 ">
+        {" "}
+        <Globe />{" "}
+      </section>
     </div>
   );
 };
