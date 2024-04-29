@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Inter } from "next/font/google";
+
 import { Dropdown, Footer, Navigation } from "../lib/exports";
 import { Toaster } from "@/components/ui/toaster";
-
-const inter = Inter({ subsets: ["latin"] });
+import { cn } from "@/lib/utils";
+import { fontSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Wislaw Education & Support Fund | NGO",
@@ -18,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={cn(" font-sans antialiased", fontSans.variable)}>
         <Navigation />
         <Dropdown />
         {children}
