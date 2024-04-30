@@ -3,19 +3,13 @@ import {
   Analytics,
   Beneficiaries,
   CallToDonate,
-  Globe,
   Initiatives,
-  WeHaveDonated,
 } from "../lib/exports";
-
-import { ParallaxScroll } from "@/components/ui/parallax";
-import { CarouselHome } from "@/components/carousel-home";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-20 ">
       <section className="">
-        {" "}
         <Slide />
       </section>
 
