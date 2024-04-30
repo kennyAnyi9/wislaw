@@ -9,7 +9,7 @@ const Initiatives = () => {
         {initiatives.map((item, index) => (
           <Link
             href={"#"}
-            className=" flex flex-col gap-5  rounded-2xl ring-1 ring-gray-500 ring-opacity-25 hover:ring-orange-300 transition-all"
+            className=" flex flex-col gap-5  rounded-2xl ring-1 ring-gray-500 ring-opacity-25 hover:ring-orange-200 transition-all"
             key={index}
           >
             <div className="w-full h-64 relative">

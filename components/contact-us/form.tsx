@@ -102,8 +102,8 @@ const ContactForm = () => {
                   mx-auto  "
         onSubmit={handleSubmit}
       >
-        <h1 className=" heading_1 lg:mt-20 ">
-          Get in <span className="text-orange-500">touch</span>{" "}
+        <h1 className="text-5xl font-bold lg:mt-20 ">
+          Get in <span className="text-orange-500 ">touch</span>{" "}
         </h1>
         <h2 className="description_1">we would be happy to hear from you</h2>
         <input

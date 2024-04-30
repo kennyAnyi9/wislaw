@@ -15,47 +15,36 @@ export function TabsDemo() {
   return (
     <Tabs defaultValue="account" className="w-full lg:w-[400px]">
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">One Time Donation</TabsTrigger>
-        <TabsTrigger value="password">Recurring</TabsTrigger>
+        <TabsTrigger value="account">Donate By Cheque</TabsTrigger>
+        <TabsTrigger value="password">Bank Details</TabsTrigger>
       </TabsList>
       <TabsContent value="account">
         <Card>
           <CardHeader>
-            <h1 className="heading_2">Donate Once</h1>
-            <p className="description_2">
-              Make donations here, safely online. <br />
-              Click below to start donating.
-            </p>
+            <h1 className="heading_2">Mail Your Cheque</h1>
           </CardHeader>
-          <CardContent className="space-y-2"></CardContent>
-          <CardFooter>
-            <Link href="https://paystack.com/pay/wesfund">
-              <Button className="bg-orange-500 animate-bounce hover:bg-orange-600">
-                Donate now
-              </Button>{" "}
-            </Link>
-          </CardFooter>
+          <CardContent className="space-y-2">
+            <p className="description_2">
+              A check in GH cedis or other convertible currencies must be made
+              payable to Wislaw Education and Support Fund. Mail your check to:
+              Wislaw Education and Support Fund. PO Box (some random bibi) Nsuta
+              Tarkwa, WR/GH
+            </p>
+          </CardContent>
         </Card>
       </TabsContent>
       <TabsContent value="password">
         <Card>
           <CardHeader>
-            <h1 className="heading_2">Donate regularly</h1>
-            <p className="description_2">
-              Automate your donation process if you wish to give at regular
-              intervals
-              <br />
-              Click below to start donating.
-            </p>
+            <h1 className="heading_2">Wislaw Account Details</h1>
           </CardHeader>
-
-          <CardFooter>
-            <Link href="https://paystack.com/pay/wesfund-recurring">
-              <Button className="bg-orange-500 hover:bg-orange-600">
-                Donate now
-              </Button>
-            </Link>
-          </CardFooter>
+          <CardContent className="space-y-2">
+            <p className="description_2">
+              Bank: Zenith Bank <br /> Account name: Wislaw Education and
+              Support Fund <br /> Account Number: 60121011708 <br />
+              Swift Code: ZEBLGHAC
+            </p>
+          </CardContent>
         </Card>
       </TabsContent>
     </Tabs>

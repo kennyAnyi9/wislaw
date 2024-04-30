@@ -5,14 +5,13 @@ import {
   Staff,
   Why,
   Board,
-  Video,
+  Hero,
 } from "../../lib/exports";
 
 const AboutUs = () => {
   return (
-    <div className=" flex min-h-screen flex-col gap-20 ">
-      <Video />
-      <Intro />
+    <div className=" flex min-h-screen flex-col gap-32 ">
+      <Hero />
       <Why />
       <Mission />
       <Board />

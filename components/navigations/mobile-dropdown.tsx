@@ -24,7 +24,7 @@ function Dropdown() {
     <>
       <div
         className="fixed px-5 w-full lg:hidden 
-                  h-20 py-4 justify-between items-center inline-flex top-0 z-30 bg-zinc-950"
+                  h-20 py-4 justify-between items-center inline-flex top-0 z-30"
       >
         <Link href="/" className="z-20">
           <Image
