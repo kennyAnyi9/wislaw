@@ -21,7 +21,6 @@ import Why from "../components/why";
 import Mission from "../components/mission";
 import Staff from "../components/about-us/staff";
 import Board from "../components/board";
-import Video from "../components/text-video";
 import ContactForm from "../components/contact-us/form";
 import Initiatives from "../components/our-inititatives/initiatives";
 import Init from "../components/our-inititatives/init";
@@ -57,7 +56,6 @@ export {
   Mission,
   Staff,
   Board,
-  Video,
   ContactForm,
   Initiatives,
   Init,
