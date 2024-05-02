@@ -396,7 +396,7 @@ export function Globe() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto w-full relative  h-full md:h-[35rem]">
+      <div className="max-w-7xl mx-auto w-full relative  h-fit md:h-[35rem]">
         {/* <motion.div
           initial={{
             opacity: 0,

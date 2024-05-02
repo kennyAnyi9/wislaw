@@ -17,7 +17,7 @@ const Beneficiaries = () => {
         {beneficiaries.map((item, index) => (
           <Motion childVariants={childVariants} key={index}>
             <div className="flex flex-col gap-5 mx-auto justify-center">
-              <p className="description_1 ">{`"${item.message}"`}</p>
+              <p className="card_sub_linner">{`"${item.message}"`}</p>
               <div className="flex flex-row gap-3">
                 <Avatar className="w-16 h-16">
                   <AvatarImage src={item.image} />
@@ -26,7 +26,7 @@ const Beneficiaries = () => {
 
                 <div className=" flex flex-col ">
                   <h1 className="description_1">{item.name}</h1>
-                  <p className="description_card">{item.position}</p>
+                  <p className="card_sub_linner">{item.position}</p>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ export default function Home() {
       <section className="relative mx-auto w-4/5 flex flex-col gap-20">
         <Initiatives />
       </section>
-      <section className="max-w-screen bg-gray-950 py-5  flex flex-col justify-center items-center">
+      <section className="w-screen bg-gray-950 py-5">
         <Analytics />
       </section>
       <section className="relative mx-auto w-11/12 lg:w-screen flex flex-col gap-20">
