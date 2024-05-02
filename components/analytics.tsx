@@ -13,7 +13,7 @@ export const Analytics = () => {
 
   return (
     <div
-      className="relative  flex flex-col lg:flex-row p-10 w-screen gap-10 lg:gap-0 mx-auto h-full  lg:h-[30rem]  justify-center items-center "
+      className="relative  flex flex-col lg:flex-row p-10 w-screen gap-10 lg:gap-0 mx-auto h-fit  lg:h-[30rem]  justify-center items-center"
       ref={ref}
     >
       <section className="w-11/12 lg:w-1/2 text-white grid grid-cols-2  gap-5 m-auto">
@@ -23,7 +23,7 @@ export const Analytics = () => {
               {inView ? <CountUp end={data.value} /> : "0"}+
             </h1>
             <br />
-            <h4 className="line-clamp-2 text-center max-w-2xl text-lg">
+            <h4 className="line-clamp-2 text-center max-w-2xl text-sm md:text-lg">
               {data.label}
             </h4>
             <br />
@@ -31,8 +31,7 @@ export const Analytics = () => {
         ))}
       </section>
       <section className="w-11/12 lg:w-1/2 ">
-        {" "}
-        <Globe />{" "}
+        <Globe />
       </section>
     </div>
   );

@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "./ui/image-slider";
-import { Card } from "./hero-card";
 
 export function Slide() {
   const images = [
@@ -27,7 +26,7 @@ export function Slide() {
         className="z-50 mx-5 lg:mx-20 flex flex-row  items-center gap-28"
       >
         <motion.div className=" flex flex-col lg:items-center">
-          <motion.p className="font-bold text-5xl text-left md:text-center max-w-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          <motion.p className="font-semibold text-5xl text-left md:text-center max-w-4xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
             Wislaw Education <br className="hidden " />
             & <br className="lg:hidden" />
             Support Fund
