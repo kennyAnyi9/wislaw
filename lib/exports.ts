@@ -11,7 +11,6 @@ import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
 
 import Button from "../components/buttons/button";
-import localFont from "next/font/local";
 import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
