@@ -17,7 +17,7 @@ export default function Home() {
         <Initiatives />
       </section>
       <section className="w-screen bg-gray-950 py-5">
-        <Analytics />
+        {/* <Analytics /> */}
       </section>
       <section className="relative mx-auto w-11/12 lg:w-screen flex flex-col gap-20">
         <Beneficiaries />
