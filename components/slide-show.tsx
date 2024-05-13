@@ -10,7 +10,7 @@ export function Slide() {
     "/images/new-slide.jpg",
   ];
   return (
-    <ImagesSlider className="h-[40rem]" images={images} overlay="true">
+    <ImagesSlider className="h-screen" images={images} overlay="true">
       <motion.div
         initial={{
           opacity: 0,
