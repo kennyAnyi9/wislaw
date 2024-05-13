@@ -1,46 +1,63 @@
+import { LocateIcon, MailIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 export const Footer = () => {
   return (
     <>
-      <footer className="mt-20 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-4 py-6 bg-gray-950">
-        <p className="text-sm text-white">
+      <footer className=" bg-gray-950 text-gray-200 py-12 sm:py-16">
+        <div className="container mx-auto px-4  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+          <div className="flex flex-col  w-fit">
+            <div className="flex items-center mb-4">
+              <span className="text-2xl font-bold">WISLAW</span>
+            </div>
+            <p className="text-gray-400 mb-4">
+              Wislaw Education and Support Fund, founded in 2007 is a
+              development and social enterprise-oriented organisation based in
+              Nsuta-Tarkwa, in the Western region of Ghana.
+            </p>
+          </div>
+          <div className="w-fit">
+            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              {links.map((link) => (
+                <li key={link.href}>
+                  {" "}
+                  {/* Add key for unique identification */}
+                  <Link className="hover:text-blue-500" href={link.href}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="w-fit">
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <div className="space-y-2">
+              {contactInfo.map((info) => (
+                <div key={info.label} className="flex flex-row">
+                  <info.icon className="h-5 w-5 mr-2" />
+                  <span>{info.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-fit">
+            <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
+            <div className="flex space-x-4">
+              {socialLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  className="text-blue-500 hover:text-blue-400"
+                  href={link.href}
+                >
+                  <link.icon className="h-6 w-6" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center text-gray-400 text-sm">
           &copy; Wislaw {new Date().getFullYear()} . All rights reserved
-        </p>
-        <nav className="flex items-center gap-4 text-white">
-          <Link href="#">Terms</Link>
-          <Link href="#">Privacy</Link>
-          <Link href="#">Support</Link>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
-          >
-            <TwitterIcon className="h-5 w-5" />
-            <span className="sr-only">Twitter</span>
-          </Link>
-          <Link
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
-          >
-            <FacebookIcon className="h-5 w-5" />
-            <span className="sr-only">Facebook</span>
-          </Link>
-          <Link
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
-          >
-            <InstagramIcon className="h-5 w-5" />
-            <span className="sr-only">Instagram</span>
-          </Link>
-          <Link
-            className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-            href="#"
-          >
-            <LinkedinIcon className="h-5 w-5" />
-            <span className="sr-only">LinkedIn</span>
-          </Link>
         </div>
       </footer>
     </>
@@ -126,5 +143,45 @@ function TwitterIcon(props: any) {
     </svg>
   );
 }
+
 //  Copyright &copy; Wislaw {new Date().getFullYear()} . All rights
 //             reserved{" "}
+
+interface LinkItem {
+  href: string;
+  label: string;
+}
+
+const links: LinkItem[] = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/news", label: "News" },
+  { href: "/donate", label: "Donate" },
+];
+
+interface ContactInfo {
+  icon: React.ComponentType<any>;
+  label: string;
+}
+
+const contactInfo: ContactInfo[] = [
+  { icon: PhoneIcon, label: "+233 506 20 1255" },
+  { icon: MailIcon, label: "info@wislawedufund.org" },
+  { icon: LocateIcon, label: "Nsuta-Tarkwa, W/R Ghana" },
+];
+
+interface SocialLink {
+  icon: React.ComponentType<any>;
+  href: string;
+}
+
+const socialLinks: SocialLink[] = [
+  { icon: TwitterIcon, href: "https://twitter.com/Wislaw_edu_fund" },
+  { icon: FacebookIcon, href: "https://www.facebook.com/wislawedufund/" },
+  {
+    icon: LinkedinIcon,
+    href: "https://www.linkedin.com/company/wislaw-education-and-support-fund/",
+  },
+  { icon: InstagramIcon, href: "#https://www.instagram.com/wislaw_edu_fund/" },
+];
