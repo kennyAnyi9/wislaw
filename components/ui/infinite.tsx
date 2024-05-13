@@ -76,7 +76,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden",
+        "scroller relative z-20 w-screen  overflow-hidden",
         className
       )}
     >
@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
               aria-hidden="true"
               className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
             ></div>
-            <div className="mx-5 rounded-sm  h-[18rem] w-[14rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out ">
+            <div className="mx-5 rounded-sm  h-[20rem] w-[16rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out ">
               <div className="relative h-full w-full">
                 <div className="aspect-w-4 aspect-h-5">
                   <Image
@@ -106,11 +106,11 @@ export const InfiniteMovingCards = ({
                     priority
                   />
                 </div>
-                <div className="absolute left-6 top-56 z-20 flex h-20 w-4/5 flex-col items-center rounded-xl bg-slate-200 justify-center shadow-2xl drop-shadow-xl">
-                  <div className="px-1 text-slate-950 text-sm font-semibold">
+                <div className="absolute text-white  z-20 flex h-full w-full flex-col items-start px-4 pb-3 rounded-xl bg-transparent justify-end shadow-2xl drop-shadow-xl">
+                  <div className="px-1  text-base font-semibold">
                     {item.name}
                   </div>
-                  <div className="text-slate-600 text-sm">{item.position}</div>
+                  <div className="text-base">{item.position}</div>
                   <Link href={item.url} className="text-3xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

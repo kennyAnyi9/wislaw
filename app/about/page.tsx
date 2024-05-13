@@ -13,7 +13,6 @@ const AboutUs = () => {
     <div className=" flex min-h-screen flex-col gap-32 ">
       <Hero />
       <Why />
-      <Mission />
       <Board />
       <Staff />
     </div>

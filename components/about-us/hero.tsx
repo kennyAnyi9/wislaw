@@ -42,27 +42,15 @@ const people = [
 ];
 const Hero = () => {
   return (
-    <div className="relative bg-grid-white/[0.05] flex flex-col gap-10 justify-around w-11/12 lg:flex-row p-5 lg:p-10 lg:max-w-7xl mx-auto rounded-xl  max-h-screen lg:h-[30rem] bg-zinc-950 lg:justify-center items-center  top-20">
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
-      />
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center rounded-xl bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <div className="w-full lg:w-1/2 z-20 font-sans leading-tight font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-5xl lg:text-7xl">
-        About{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-200">
-          {" "}
-          wislaw
-        </span>{" "}
-        <br className="hidden lg:block" /> Education &{" "}
-        <br className="hidden lg:block" /> Support Fund
-      </div>
-      <div className="w-full  lg:w-1/2">
+    <div className="relative  flex flex-col gap-10 justify-around w-screen top-28 lg:top-20 lg:flex-row   mx-auto   max-h-screen lg:h-[30rem] lg:justify-center items-center">
+      <div className="w-4/5 flex flex-col gap-5">
+        <h1 className=" text-5xl lg:text-7xl font-semibold">
+          About <span className="text-orange-500">us</span>{" "}
+        </h1>
         <div className="flex flex-row items-center justify-start  mb-10 w-full">
           <AnimatedTooltip items={people} />
         </div>
-        <p className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 text-sm">
+        <p className="body_text max-w-5xl">
           Wislaw Education and Support Fund, founded in 2007 is a development
           and social enterprise-oriented organisation based in Nsuta-Tarkwa, in
           the Western region of Ghana. We aim to build skilled youth as agents

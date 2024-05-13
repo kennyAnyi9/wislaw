@@ -8,9 +8,12 @@ import { InfiniteMovingCards } from "../ui/infinite";
 const Staff = () => {
   return (
     <section className="w-screen mx-auto flex flex-col  gap-5  items-center  justify-center">
-      <h1 className="heading_land">Meet our staff</h1>
+      <h1 className="font-semibold text-4xl tracking-thighter ">
+        Meet our staff
+        <div className="h-1 w-1/3 bg-orange-500 mx-auto mt-1"></div>
+      </h1>
 
-      <InfiniteMovingCards items={members} direction="right" speed="slow" />
+      <InfiniteMovingCards items={members} direction="right" speed="normal" />
     </section>
   );
 };
