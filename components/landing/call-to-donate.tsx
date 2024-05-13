@@ -1,6 +1,5 @@
-import React from "react";
-import { Spotlight } from "../ui/spotlight";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const CallToDonate = () => {
   return (
@@ -16,10 +15,11 @@ const CallToDonate = () => {
       </div>
       <div className="w-full  lg:w-1/5">
         <Button
+          asChild
           variant={"outline"}
           className="bg-transparent rounded-full px-5 font-normal text-sm md:text-lg text-white opacity-70"
         >
-          Donate here
+          <Link href="/donate">Donate here</Link>
         </Button>
       </div>
     </div>

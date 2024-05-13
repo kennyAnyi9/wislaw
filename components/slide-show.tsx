@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "./ui/image-slider";
+import Link from "next/link";
 
 export function Slide() {
   const images = [
@@ -40,7 +41,9 @@ export function Slide() {
             opportunities present in Ghana and Africa.
           </p>
           <button className="w-fit px-4 py-2 lg:mx-auto backdrop-blur-sm border bg-orange-300/10 border-orange-500/20 text-white rounded-xl relative mt-4">
-            <span>Learn more →</span>
+            <Link href="/about">
+              <span>Learn more →</span>
+            </Link>
             <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4  from-transparent via-orange-500 to-transparent" />
           </button>
         </motion.div>

@@ -21,8 +21,6 @@ export const Footer = () => {
             <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link.href}>
-                  {" "}
-                  {/* Add key for unique identification */}
                   <Link className="hover:text-blue-500" href={link.href}>
                     {link.label}
                   </Link>

@@ -47,7 +47,7 @@ const Navigation = () => {
               variant="ghost"
               className="bg-orange-600 hover:bg-orange-500"
             >
-              <Link href={""}>DONATE</Link>
+              <Link href="/donate">DONATE</Link>
             </Button>
             <svg
               xmlns="http://www.w3.org/2000/svg"
