@@ -21,6 +21,7 @@
     "@react-three/drei": "^9.105.4",
     "@react-three/fiber": "^8.16.2",
     "@tabler/icons-react": "^2.47.0",
+    "@tailus/themer": "^0.0.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "embla-carousel-autoplay": "8.0.0-rc19",
