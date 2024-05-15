@@ -47,6 +47,7 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.163.0",
     "three-globe": "^2.31.0",
+    "typeit-react": "^2.7.1",
     "yup": "^1.1.1"
   },
   "devDependencies": {
