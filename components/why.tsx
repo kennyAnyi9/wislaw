@@ -36,8 +36,7 @@ const Why = () => {
                       SDG 4
                     </div>
                     <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
-                      <svg
-                        className="m-auto w-20 fill-primary-500 stroke-[4px]"
+                      {/* <svg
                         viewBox="0 0 256 256"
                         xmlns="http://www.w3.org/2000/svg"
                         strokeWidth="0.9"
@@ -47,6 +46,22 @@ const Why = () => {
                           className="text-primary-500"
                           d="M148,224a4.0002,4.0002,0,0,1-4,4H112a4,4,0,0,1,0-8h32A4.0002,4.0002,0,0,1,148,224Zm71.05176-67.29443-12.36328,55.63232a11.92889,11.92889,0,0,1-7.72657,8.71533,11.93627,11.93627,0,0,1-11.48339-1.94775L158.59656,196H97.40344l-28.882,23.10547a11.93943,11.93943,0,0,1-7.47363,2.63769,12.05968,12.05968,0,0,1-4.00976-.68994,11.92889,11.92889,0,0,1-7.72657-8.71533L36.94824,156.70508a12.0757,12.0757,0,0,1,2.49512-10.28516l30.441-36.53027a118.54694,118.54694,0,0,1,7.92029-35.83643c11.82129-30.43994,33.77539-50.29052,42.665-57.4126a12.05721,12.05721,0,0,1,15.05566.04981c10.89941,8.855,30.86914,28.0918,42.15332,57.437A120.30232,120.30232,0,0,1,185.49,109.13965l31.06665,37.27978A12.07776,12.07776,0,0,1,219.05176,156.70557ZM98.32422,188h59.32812c50.49219-91.62646-7.93457-149.47168-27.17187-165.10059a3.96141,3.96141,0,0,0-5.00879-.01513v.00049C105.9668,38.50928,46.75,96.34375,98.32422,188Zm-7.47852,3.00049c-13.05664-23.46094-20.08032-46.35938-21.0542-68.502L45.58984,151.541a4.02645,4.02645,0,0,0-.833,3.42773l12.36328,55.63379a3.99987,3.99987,0,0,0,6.40332,2.25586ZM210.41016,151.541l-24.70911-29.65088c-.79761,22.3247-7.66272,45.42187-20.57,69.09179l27.34546,21.87647a3.99886,3.99886,0,0,0,6.40235-2.25586l12.36425-55.63281A4.02774,4.02774,0,0,0,210.41016,151.541ZM128,104a8,8,0,1,0-8-8A8.00917,8.00917,0,0,0,128,104Z"
                         ></path>
+                      </svg> */}
+                      <svg
+                        className="m-auto text-blue-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <rect width="8" height="18" x="3" y="3" rx="1" />
+                        <path d="M7 3v18" />
+                        <path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
                       </svg>
                     </div>
 
@@ -70,19 +85,20 @@ const Why = () => {
                     </div>
                     <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                       <svg
-                        className="m-auto  w-20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
                         viewBox="0 0 24 24"
                         fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="m-auto text-blue-500"
                       >
-                        <path
-                          d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H12M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V10M21 15.21C20.9318 15.2141 20.7357 15.21 20.6667 15.21C19.6422 15.21 18.7077 14.7524 18 14C17.2923 14.7524 16.3578 15.2099 15.3333 15.2099C15.2643 15.2099 15.0684 15.2141 15.0002 15.21C15.0002 15.21 15 15.9855 15 16.3979C15 18.6121 16.2748 20.4725 18 21C19.7252 20.4725 21 18.6121 21 16.3979C21 15.9855 21 15.21 21 15.21Z"
-                          stroke="currentColor"
-                          strokeWidth="1.128"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary-500"
-                        ></path>
+                        <path d="M12.4 2.7c.9-.9 2.5-.9 3.4 0l5.5 5.5c.9.9.9 2.5 0 3.4l-3.7 3.7c-.9.9-2.5.9-3.4 0L8.7 9.8c-.9-.9-.9-2.5 0-3.4Z" />
+                        <path d="m14 7 3 3" />
+                        <path d="M9.4 10.6 2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4" />
                       </svg>
                     </div>
                     <div className="relative z-10 mt-6 space-y-2 text-center">
@@ -105,19 +121,19 @@ const Why = () => {
                     </div>
                     <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                       <svg
-                        className="m-auto w-24 stroke-[1px]"
+                        className="m-auto  w-20"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M20.7639 12H10.0556M3 8.00003H5.5M4 12H5.5M4.5 16H5.5M9.96153 12.4896L9.07002 15.4486C8.73252 16.5688 8.56376 17.1289 8.70734 17.4633C8.83199 17.7537 9.08656 17.9681 9.39391 18.0415C9.74792 18.1261 10.2711 17.8645 11.3175 17.3413L19.1378 13.4311C20.059 12.9705 20.5197 12.7402 20.6675 12.4285C20.7961 12.1573 20.7961 11.8427 20.6675 11.5715C20.5197 11.2598 20.059 11.0295 19.1378 10.5689L11.3068 6.65342C10.2633 6.13168 9.74156 5.87081 9.38789 5.95502C9.0808 6.02815 8.82627 6.24198 8.70128 6.53184C8.55731 6.86569 8.72427 7.42461 9.05819 8.54246L9.96261 11.5701C10.0137 11.7411 10.0392 11.8266 10.0493 11.9137C10.0583 11.991 10.0582 12.069 10.049 12.1463C10.0387 12.2334 10.013 12.3188 9.96153 12.4896Z"
+                          d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H12M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V10M21 15.21C20.9318 15.2141 20.7357 15.21 20.6667 15.21C19.6422 15.21 18.7077 14.7524 18 14C17.2923 14.7524 16.3578 15.2099 15.3333 15.2099C15.2643 15.2099 15.0684 15.2141 15.0002 15.21C15.0002 15.21 15 15.9855 15 16.3979C15 18.6121 16.2748 20.4725 18 21C19.7252 20.4725 21 18.6121 21 16.3979C21 15.9855 21 15.21 21 15.21Z"
                           stroke="currentColor"
                           strokeWidth="1.128"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           className="text-primary-500"
-                        ></path>
+                        ></path>{" "}
                       </svg>
                     </div>
 
@@ -140,20 +156,23 @@ const Why = () => {
                     </div>
                     <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                       <svg
-                        className="m-auto  w-20"
+                        className="m-auto text-primary-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="72"
+                        height="72"
                         viewBox="0 0 24 24"
                         fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        stroke="currentColor"
+                        strokeWidth="1"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       >
-                        <path
-                          d="M13 3H8.2C7.0799 3 6.51984 3 6.09202 3.21799C5.71569 3.40973 5.40973 3.71569 5.21799 4.09202C5 4.51984 5 5.0799 5 6.2V17.8C5 18.9201 5 19.4802 5.21799 19.908C5.40973 20.2843 5.71569 20.5903 6.09202 20.782C6.51984 21 7.0799 21 8.2 21H12M13 3L19 9M13 3V7.4C13 7.96005 13 8.24008 13.109 8.45399C13.2049 8.64215 13.3578 8.79513 13.546 8.89101C13.7599 9 14.0399 9 14.6 9H19M19 9V10M21 15.21C20.9318 15.2141 20.7357 15.21 20.6667 15.21C19.6422 15.21 18.7077 14.7524 18 14C17.2923 14.7524 16.3578 15.2099 15.3333 15.2099C15.2643 15.2099 15.0684 15.2141 15.0002 15.21C15.0002 15.21 15 15.9855 15 16.3979C15 18.6121 16.2748 20.4725 18 21C19.7252 20.4725 21 18.6121 21 16.3979C21 15.9855 21 15.21 21 15.21Z"
-                          stroke="currentColor"
-                          strokeWidth="1.128"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary-500"
-                        ></path>
-                      </svg>
+                        <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
+                        <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
+                        <path d="m2 16 6 6" />
+                        <circle cx="16" cy="9" r="2.9" />
+                        <circle cx="6" cy="5" r="3" />
+                      </svg>{" "}
                     </div>
                     <div className="relative z-10 mt-6 space-y-2 text-center">
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
@@ -180,7 +199,7 @@ const Why = () => {
             <h1 className="font-semibold text-white text-4xl md:text-5xl text-center mx-auto tracking-thighter">
               Who We Are & What <br />
               We{" "}
-              <span className="bg-clip-text max-w-5xl text-transparent bg-gradient-to-r from-orange-400 to-orange-700">
+              <span className="bg-clip-text max-w-5xl text-transparent bg-gradient-to-r from-blue-400 to-blue-700">
                 Believe
               </span>{" "}
               In
@@ -199,25 +218,21 @@ const Why = () => {
                     <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6 ">
                       <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                         <svg
-                          className="m-auto size-6"
                           xmlns="http://www.w3.org/2000/svg"
                           width="1em"
                           height="1em"
                           viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="m-auto size-6"
                         >
-                          <g fill="none">
-                            <path
-                              stroke="currentColor"
-                              d="M9 6a3 3 0 1 0 6 0a3 3 0 0 0-6 0zm-4.562 7.902a3 3 0 1 0 3 5.195a3 3 0 0 0-3-5.196zm15.124 0a2.999 2.999 0 1 1-2.998 5.194a2.999 2.999 0 0 1 2.998-5.194z"
-                            />
-                            <path
-                              fill="currentColor"
-                              fillRule="evenodd"
-                              d="M9.003 6.125a2.993 2.993 0 0 1 .175-1.143a8.507 8.507 0 0 0-5.031 4.766a8.5 8.5 0 0 0-.502 4.817a3 3 0 0 1 .902-.723a7.498 7.498 0 0 1 4.456-7.717m5.994 0a7.499 7.499 0 0 1 4.456 7.717a2.998 2.998 0 0 1 .902.723a8.5 8.5 0 0 0-5.533-9.583a3 3 0 0 1 .175 1.143m2.536 13.328a3.002 3.002 0 0 1-1.078-.42a7.501 7.501 0 0 1-8.91 0l-.107.065a3 3 0 0 1-.971.355a8.5 8.5 0 0 0 11.066 0"
-                              clipRule="evenodd"
-                            />
-                          </g>
-                        </svg>
+                          <circle cx="12" cy="12" r="10" />
+                          <circle cx="12" cy="12" r="6" />
+                          <circle cx="12" cy="12" r="2" />
+                        </svg>{" "}
                       </div>
                       <div className="space-y-2">
                         <h2 className="text-lg font-medium transition group-hover:text-secondary-950 text-white">
@@ -244,19 +259,14 @@ const Why = () => {
                           width="1em"
                           height="1em"
                           viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
-                          <g fill="none">
-                            <path
-                              stroke="currentColor"
-                              d="M9 6a3 3 0 1 0 6 0a3 3 0 0 0-6 0zm-4.562 7.902a3 3 0 1 0 3 5.195a3 3 0 0 0-3-5.196zm15.124 0a2.999 2.999 0 1 1-2.998 5.194a2.999 2.999 0 0 1 2.998-5.194z"
-                            />
-                            <path
-                              fill="currentColor"
-                              fillRule="evenodd"
-                              d="M9.003 6.125a2.993 2.993 0 0 1 .175-1.143a8.507 8.507 0 0 0-5.031 4.766a8.5 8.5 0 0 0-.502 4.817a3 3 0 0 1 .902-.723a7.498 7.498 0 0 1 4.456-7.717m5.994 0a7.499 7.499 0 0 1 4.456 7.717a2.998 2.998 0 0 1 .902.723a8.5 8.5 0 0 0-5.533-9.583a3 3 0 0 1 .175 1.143m2.536 13.328a3.002 3.002 0 0 1-1.078-.42a7.501 7.501 0 0 1-8.91 0l-.107.065a3 3 0 0 1-.971.355a8.5 8.5 0 0 0 11.066 0"
-                              clipRule="evenodd"
-                            />
-                          </g>
+                          <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                          <circle cx="12" cy="12" r="3" />
                         </svg>
                       </div>
                       <div className="space-y-2">
