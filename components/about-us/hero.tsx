@@ -1,5 +1,4 @@
 import React from "react";
-import { Spotlight } from "../ui/spotlight";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 
 const people = [
