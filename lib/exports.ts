@@ -9,12 +9,10 @@ import {
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
-
 import Button from "../components/buttons/button";
 import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
-import Intro from "../components/intro";
 import Why from "../components/why";
 import Mission from "../components/mission";
 import Staff from "../components/about-us/staff";
@@ -44,7 +42,6 @@ export {
   Overview,
   Analytics,
   Beneficiaries,
-  Intro,
   Why,
   Mission,
   Staff,

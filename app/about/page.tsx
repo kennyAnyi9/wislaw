@@ -1,12 +1,4 @@
-import {
-  Heroine,
-  Intro,
-  Mission,
-  Staff,
-  Why,
-  Board,
-  Hero,
-} from "../../lib/exports";
+import { Mission, Staff, Why, Board, Hero } from "../../lib/exports";
 
 const AboutUs = () => {
   return (

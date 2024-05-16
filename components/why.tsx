@@ -1,5 +1,4 @@
 import Motion, { childVariants } from "@/app/framer";
-import { why } from "@/data/data";
 import React from "react";
 
 const Why = () => {
@@ -29,7 +28,7 @@ const Why = () => {
         <section className="">
           <div className="mx-auto max-w-6xl px-6 text-gray-500">
             <div className="relative">
-              <div className="relative z-10  grid grid-cols-6 gap-3">
+              <div className="relative   grid grid-cols-6 gap-3">
                 <div className="relative col-span-full overflow-hidden rounded-[--card-border-radius] border border-[--ui-light-border-color] bg-white p-[--card-padding] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg] sm:col-span-3 lg:col-span-2">
                   <div>
                     <div className="absolute right-3 top-3 mx-auto mb-2 w-fit cursor-pointer rounded-[--annonce-border-radius] border border-[--ui-light-border-color] px-3 py-px text-sm font-medium text-gray-700 transition duration-200 hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:text-gray-300 dark:hover:border-[--ui-dark-border-hover-color]">
@@ -65,7 +64,7 @@ const Why = () => {
                       </svg>
                     </div>
 
-                    <div className="relative z-10 mt-6 space-y-2 text-center">
+                    <div className="relative  mt-6 space-y-2 text-center">
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Quality Education
                       </h2>
@@ -101,7 +100,7 @@ const Why = () => {
                         <path d="M9.4 10.6 2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2l1.4-1.4" />
                       </svg>
                     </div>
-                    <div className="relative z-10 mt-6 space-y-2 text-center">
+                    <div className="relative  mt-6 space-y-2 text-center">
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         No Poverty
                       </h2>
@@ -137,7 +136,7 @@ const Why = () => {
                       </svg>
                     </div>
 
-                    <div className="relative z-10 mt-6 space-y-2 text-center">
+                    <div className="relative  mt-6 space-y-2 text-center">
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Gender Equality
                       </h2>
@@ -174,7 +173,7 @@ const Why = () => {
                         <circle cx="6" cy="5" r="3" />
                       </svg>{" "}
                     </div>
-                    <div className="relative z-10 mt-6 space-y-2 text-center">
+                    <div className="relative  mt-6 space-y-2 text-center">
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Decent Work and Economic Growth
                       </h2>
@@ -211,11 +210,11 @@ const Why = () => {
               positive impact.
             </p>
             <div className="relative">
-              <div className="relative z-10  grid grid-cols-6 gap-3">
+              <div className="relative   grid grid-cols-6 gap-3">
                 {/* right here */}
                 <div className="relative col-span-full  overflow-hidden rounded-[--card-border-radius] border  p-[--card-padding] border-[--ui-dark-border-color] bg-[--card-dark-bg] lg:col-span-2">
                   <div className="grid h-full sm:grid-cols-1">
-                    <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6 ">
+                    <div className="relative  flex flex-col justify-between space-y-12 lg:space-y-6 ">
                       <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +250,7 @@ const Why = () => {
                 {/* vision */}
                 <div className="relative col-span-full  overflow-hidden rounded-[--card-border-radius] border  p-[--card-padding] border-[--ui-dark-border-color] bg-[--card-dark-bg] lg:col-span-2">
                   <div className="grid h-full sm:grid-cols-1">
-                    <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6 ">
+                    <div className="relative  flex flex-col justify-between space-y-12 lg:space-y-6 ">
                       <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                         <svg
                           className="m-auto size-6"
@@ -285,7 +284,7 @@ const Why = () => {
                 {/* values */}
                 <div className="relative col-span-full  overflow-hidden rounded-[--card-border-radius] border  p-[--card-padding] border-[--ui-dark-border-color] bg-[--card-dark-bg] lg:col-span-2">
                   <div className="grid h-full sm:grid-cols-1">
-                    <div className="relative z-10 flex flex-col justify-between space-y-12 lg:space-y-6 ">
+                    <div className="relative  flex flex-col justify-between space-y-12 lg:space-y-6 ">
                       <div className="relative flex aspect-square size-12 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
                         <svg
                           className="m-auto size-6"
