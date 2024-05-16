@@ -35,10 +35,7 @@ export function Slide() {
           <p className="text-gray-300  text-sm line-clamp-4 md:line-clamp-2 text-left md:text-center max-w-2xl lg:text-lg font-normal">
             Wislaw Education and Support Fund, founded in 2007 is a development
             and social enterprise-oriented organisation based in Nsuta-Tarkwa,
-            in the Western region of Ghana. We aim to build skilled youth as
-            agents of change in their communities by equipping them with the
-            necessary skills and funds they require to leverage the unique
-            opportunities present in Ghana and Africa.
+            in the Western region of Ghana.
           </p>
           <button className="w-fit px-4 py-2 lg:mx-auto backdrop-blur-sm border bg-orange-300/10 border-orange-500/20 text-white rounded-xl relative mt-4">
             <Link href="/about">
