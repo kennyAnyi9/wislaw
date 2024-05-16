@@ -3,7 +3,7 @@ import { AnalyticsData } from "@/data/data";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import { Card } from "./hero-card";
+
 import Globe from "./ui/globe";
 
 export const Analytics = () => {

@@ -29,7 +29,6 @@ import { Slide } from "@/components/slide-show";
 import CallToDonate from "@/components/landing/call-to-donate";
 import StayConnected from "@/components/landing/stay-connected";
 import WeHaveDonated from "@/components/landing/we-have-donated";
-import { CallToAction } from "@/components/call-to-action";
 
 export type {
   navigationProps,
@@ -59,7 +58,6 @@ export {
   Init,
   Footer,
   Hero,
-  CallToAction,
   CallToDonate,
   WeHaveDonated,
   StayConnected,
