@@ -16,7 +16,7 @@ const Beneficiaries = () => {
       <section className="w-11/12 lg:w-4/5 mx-auto gap-10 mb-10 grid grid-cols-1 lg:grid-cols-2">
         {beneficiaries.map((item, index) => (
           <Motion childVariants={childVariants} key={index}>
-            <div className="flex flex-col gap-5 mx-auto justify-center">
+            <div className="flex flex-col gap-5 mx-auto justify-center rounded-lg  border p-4 min-h-72">
               <p className="card_sub_linner">{`"${item.message}"`}</p>
               <div className="flex flex-row gap-3">
                 <Avatar className="w-16 h-16">
@@ -38,14 +38,3 @@ const Beneficiaries = () => {
 };
 
 export default Beneficiaries;
-
-{
-  /* <div className="w-11/12 lg:w-1/2 relative h-[20rem] mx-auto lg:h-[40rem]">
- <Image
- src={item.image}
- alt="logo"
- fill
- className="w-full h-full object-cover rounded-xl"
-/>
-</div> */
-}

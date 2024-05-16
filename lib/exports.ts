@@ -14,7 +14,6 @@ import Button from "../components/buttons/button";
 import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
-import Heroine from "../components/heroine";
 import Intro from "../components/intro";
 import Why from "../components/why";
 import Mission from "../components/mission";
@@ -27,8 +26,6 @@ import { Footer } from "@/components/navigations/footer";
 import Hero from "@/components/about-us/hero";
 import { Slide } from "@/components/slide-show";
 import CallToDonate from "@/components/landing/call-to-donate";
-import StayConnected from "@/components/landing/stay-connected";
-import WeHaveDonated from "@/components/landing/we-have-donated";
 
 export type {
   navigationProps,
@@ -47,7 +44,6 @@ export {
   Overview,
   Analytics,
   Beneficiaries,
-  Heroine,
   Intro,
   Why,
   Mission,
@@ -59,6 +55,4 @@ export {
   Footer,
   Hero,
   CallToDonate,
-  WeHaveDonated,
-  StayConnected,
 };
