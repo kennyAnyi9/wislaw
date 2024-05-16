@@ -8,7 +8,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-20 ">
+    <main className="flex min-h-screen flex-col gap-20 mb-10">
       <section className="">
         <Slide />
       </section>
