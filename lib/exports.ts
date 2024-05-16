@@ -30,7 +30,6 @@ import CallToDonate from "@/components/landing/call-to-donate";
 import StayConnected from "@/components/landing/stay-connected";
 import WeHaveDonated from "@/components/landing/we-have-donated";
 import { CallToAction } from "@/components/call-to-action";
-import { Globe } from "@/components/landing/globe";
 
 export type {
   navigationProps,
@@ -64,5 +63,4 @@ export {
   CallToDonate,
   WeHaveDonated,
   StayConnected,
-  Globe,
 };

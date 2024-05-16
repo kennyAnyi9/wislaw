@@ -98,14 +98,10 @@ const ContactForm = () => {
   return (
     <>
       <form
-        className="relative md:top-28 lg:top-0 w-11/12 md:w-4/5 text-black gap-5 flex flex-col 
+        className="relative md:top-28 lg:top-0  text-black gap-5 flex flex-col 
                   mx-auto  "
         onSubmit={handleSubmit}
       >
-        <h1 className="text-5xl font-bold lg:mt-20 ">
-          Get in <span className="text-orange-500 ">touch</span>{" "}
-        </h1>
-        <h2 className="description_1">we would be happy to hear from you</h2>
         <input
           name="name"
           type="text"
@@ -146,7 +142,7 @@ const ContactForm = () => {
           value={source}
           onChange={handleSourceChange}
           required
-          className="description_2"
+          className="description_2 h-8"
         >
           <option value="-">How did you hear about us?</option>
           <option value="Social Media">Social media</option>

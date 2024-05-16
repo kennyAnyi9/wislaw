@@ -4,7 +4,7 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Card } from "./hero-card";
-import { Globe } from "@/lib/exports";
+import Globe from "./ui/globe";
 
 export const Analytics = () => {
   const { ref, inView } = useInView({
@@ -30,8 +30,8 @@ export const Analytics = () => {
           </div>
         ))}
       </section>
-      <section className="hidden lg:block w-11/12 lg:w-1/2 ">
-        <Globe />
+      <section className=" w-11/12 lg:w-1/2">
+        <Globe className="" />
       </section>
     </div>
   );
