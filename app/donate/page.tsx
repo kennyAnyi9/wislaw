@@ -1,8 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Globe } from "@/lib/exports";
 import Image from "next/image";
-
 import TypeIt from "typeit-react";
 
 const Donate = () => {
