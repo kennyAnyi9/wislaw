@@ -6,6 +6,7 @@ import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
+import { BadgeDestructive } from "../destruct";
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -26,6 +27,7 @@ const Navigation = () => {
                 />
               </div>
             </Link>
+            <BadgeDestructive />
           </div>
 
           <div className=" my-auto  gap-5 flex-row items-center justify-center text-white flex">

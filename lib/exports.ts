@@ -14,7 +14,6 @@ import Overview from "../components/overview";
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
 import Why from "../components/why";
-import Mission from "../components/mission";
 import Staff from "../components/about-us/staff";
 import Board from "../components/board";
 import ContactForm from "../components/contact-us/form";
@@ -43,7 +42,6 @@ export {
   Analytics,
   Beneficiaries,
   Why,
-  Mission,
   Staff,
   Board,
   ContactForm,
