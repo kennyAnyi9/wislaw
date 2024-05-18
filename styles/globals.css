@@ -115,11 +115,21 @@
   }
 }
 
+.header_text {
+  @apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
+}
 .body_text {
-  @apply lg:text-lg text-neutral-700;
+  @apply text-xl text-muted-foreground;
+}
+
+.header_text_card {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
+.body_text_card {
+  @apply text-lg text-muted-foreground;
 }
 .body_text_dark {
-  @apply lg:text-lg text-neutral-400;
+  @apply text-xl text-muted-foreground;
 }
 
 .text_width {

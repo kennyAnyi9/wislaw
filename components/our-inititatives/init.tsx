@@ -10,7 +10,7 @@ const Init = () => {
           <section
             className={`flex flex-col  ${
               index % 2 === 0 ? " lg:flex-row" : " lg:flex-row-reverse"
-            } w-full gap-10 lg:gap-28`}
+            }  gap-10 lg:gap-28`}
           >
             <div className="w-11/12 lg:w-2/5 relative h-[15rem] mx-auto lg:h-[40rem]">
               <Image
@@ -22,11 +22,9 @@ const Init = () => {
             </div>
 
             <div className="flex flex-col gap-5 mx-auto w-11/12 lg:w-1/2   justify-center">
-              <div className=" inline-flex gap-2 heading_land ">
-                {item.title}
-              </div>
+              <div className=" inline-flex gap-2 header_text">{item.title}</div>
 
-              <p className="description_1">{item.desctiption}</p>
+              <p className="body_text">{item.desctiption}</p>
             </div>
           </section>
         </Motion>

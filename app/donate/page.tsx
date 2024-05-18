@@ -13,7 +13,7 @@ const Donate = () => {
         fill
         className="w-full h-full object-cover -z-20"
       />
-      <section className="flex flex-col w-11/12 lg:w-1/2 lg:ml-20 gap-5 mt-28 lg:mt-10 ">
+      <section className="flex flex-col w-11/12 lg:w-1/2 lg:ml-20  gap-5 mt-28 lg:mt-10 ">
         {" "}
         <h1 className="font-sans leading-tight  font-bold text-5xl lg:text-8xl text-white">
           Change Lives, <br />
@@ -36,7 +36,7 @@ const Donate = () => {
             />
           </span>
         </h1>
-        <p className="max-w-3xl lg:text-xl  text-white">
+        <p className="max-w-3xl text-gray-300  text-xl  md:line-clamp-2 text-left md:text-center font-normal">
           Every donation empowers individuals and transforms communities. Become
           a monthly donor and witness the ongoing impact of your generosity.
         </p>
@@ -52,12 +52,10 @@ const Donate = () => {
           </Button>
         </div>
       </section>
-      <section className="bg-white dark:bg-[#162231] shadow-xl lg:mt-10 rounded-2xl p-6 md:p-12 w-11/12 lg:w-1/3 flex flex-col gap-5">
+      <section className="bg-gray-100 mb-10 dark:bg-[#162231] shadow-xl lg:mt-10 rounded-2xl p-6 md:p-12 w-11/12 lg:w-1/3 flex flex-col gap-5">
         <div>
-          <h1 className="text-2xl md:text-[35px] leading-none font-bold mb-4">
-            Donate through bank
-          </h1>
-          <p>
+          <h1 className="header_text mb-4">Donate through bank</h1>
+          <p className="body_text_card">
             {" "}
             Bank: Zenith Bank
             <br /> Account name: Wislaw Education and Support Fund
@@ -66,16 +64,14 @@ const Donate = () => {
           </p>
         </div>
         <div>
-          <h1 className="text-2xl md:text-[35px] leading-none font-bold mb-4">
-            Donate by cheque
-          </h1>
-          <p>
+          <h1 className="header_text mb-4">Donate by cheque</h1>
+          <p className="body_text_card">
             A check in GH cedis or other convertible currencies must be made
             payable to Wislaw Education and Support Fund. <br /> Mail your check
             to:
             <br />
-            Wislaw Education and Support Fund. PO Box (some random bibi) Nsuta
-            Tarkwa, WR/GH
+            Wislaw Education and Support Fund. PO Box TK 549, Nsuta Tarkwa,
+            WR/GH
           </p>
         </div>
       </section>

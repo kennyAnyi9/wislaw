@@ -21,8 +21,8 @@ const Initiatives = () => {
               />
             </div>
             <div className="w-full h-fit pb-3 px-3 flex flex-col gap-3">
-              <h1 className="card_header">{item.title}</h1>
-              <h1 className="card_sub_linner">{item.description}</h1>
+              <h1 className="header_text_card">{item.title}</h1>
+              <h1 className="body_text_card">{item.description}</h1>
             </div>
           </Link>
         ))}

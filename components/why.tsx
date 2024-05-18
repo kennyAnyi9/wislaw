@@ -35,17 +35,6 @@ const Why = () => {
                       SDG 4
                     </div>
                     <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:bg-white/5 dark:before:border-white/5 dark:before:bg-white/5">
-                      {/* <svg
-                        viewBox="0 0 256 256"
-                        xmlns="http://www.w3.org/2000/svg"
-                        strokeWidth="0.9"
-                        stroke="currentColor"
-                      >
-                        <path
-                          className="text-primary-500"
-                          d="M148,224a4.0002,4.0002,0,0,1-4,4H112a4,4,0,0,1,0-8h32A4.0002,4.0002,0,0,1,148,224Zm71.05176-67.29443-12.36328,55.63232a11.92889,11.92889,0,0,1-7.72657,8.71533,11.93627,11.93627,0,0,1-11.48339-1.94775L158.59656,196H97.40344l-28.882,23.10547a11.93943,11.93943,0,0,1-7.47363,2.63769,12.05968,12.05968,0,0,1-4.00976-.68994,11.92889,11.92889,0,0,1-7.72657-8.71533L36.94824,156.70508a12.0757,12.0757,0,0,1,2.49512-10.28516l30.441-36.53027a118.54694,118.54694,0,0,1,7.92029-35.83643c11.82129-30.43994,33.77539-50.29052,42.665-57.4126a12.05721,12.05721,0,0,1,15.05566.04981c10.89941,8.855,30.86914,28.0918,42.15332,57.437A120.30232,120.30232,0,0,1,185.49,109.13965l31.06665,37.27978A12.07776,12.07776,0,0,1,219.05176,156.70557ZM98.32422,188h59.32812c50.49219-91.62646-7.93457-149.47168-27.17187-165.10059a3.96141,3.96141,0,0,0-5.00879-.01513v.00049C105.9668,38.50928,46.75,96.34375,98.32422,188Zm-7.47852,3.00049c-13.05664-23.46094-20.08032-46.35938-21.0542-68.502L45.58984,151.541a4.02645,4.02645,0,0,0-.833,3.42773l12.36328,55.63379a3.99987,3.99987,0,0,0,6.40332,2.25586ZM210.41016,151.541l-24.70911-29.65088c-.79761,22.3247-7.66272,45.42187-20.57,69.09179l27.34546,21.87647a3.99886,3.99886,0,0,0,6.40235-2.25586l12.36425-55.63281A4.02774,4.02774,0,0,0,210.41016,151.541ZM128,104a8,8,0,1,0-8-8A8.00917,8.00917,0,0,0,128,104Z"
-                        ></path>
-                      </svg> */}
                       <svg
                         className="m-auto text-blue-500"
                         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +57,7 @@ const Why = () => {
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Quality Education
                       </h2>
-                      <p className="text-neutral-600 dark:text-gray-300">
+                      <p className="">
                         We seek to achieve this by equipping individuals with
                         the technological training and career guidance they need
                         to succeed in the 21st Century
@@ -104,7 +93,7 @@ const Why = () => {
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         No Poverty
                       </h2>
-                      <p className="text-gray-700 dark:text-gray-300">
+                      <p className="">
                         We seek to achieve this through the alternate
                         livelihoods by equipping individuals with various
                         livelihood skills training to enable them to cater for
@@ -140,7 +129,7 @@ const Why = () => {
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Gender Equality
                       </h2>
-                      <p className="text-gray-700 dark:text-gray-300">
+                      <p className="">
                         By organising training activities targeted at developing
                         women and girls in the community, we hope to bridge the
                         gender gap.
@@ -177,7 +166,7 @@ const Why = () => {
                       <h2 className="text-lg font-medium text-gray-800 transition group-hover:text-secondary-950 dark:text-white">
                         Decent Work and Economic Growth
                       </h2>
-                      <p className="text-gray-700 dark:text-gray-300">
+                      <p className="">
                         We seek to achieve this by inculcating an
                         entrepreneurial mindset in the youth and providing
                         support for start-ups that have the potential of
@@ -237,7 +226,7 @@ const Why = () => {
                         <h2 className="text-lg font-medium transition group-hover:text-secondary-950 text-white">
                           Our Mission
                         </h2>
-                        <p className="text-gray-300">
+                        <p className="">
                           To be a leading organisation in the creation of
                           opportunities for Technology and Innovation for
                           Ghana’s sustainable development.
@@ -272,7 +261,7 @@ const Why = () => {
                         <h2 className="text-lg font-medium transition group-hover:text-secondary-950 text-white">
                           Our Vision
                         </h2>
-                        <p className="text-gray-300">
+                        <p className="">
                           To raise high-potential Startups, SMEs and
                           Entrepreneurs that will inspire economic growth and
                           social development through innovation and technology.
@@ -311,7 +300,7 @@ const Why = () => {
                         <h2 className="text-lg font-medium transition group-hover:text-secondary-950 text-white">
                           Our Values
                         </h2>
-                        <p className="text-gray-300">
+                        <p className="">
                           Innovation and Technology, Sustainability and Growth,
                           Diversity and Inclusion, Social justice and Equality,
                           Empathy and Attitude of Giving.

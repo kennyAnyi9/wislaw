@@ -4,10 +4,10 @@ import React, { useState } from "react";
 
 const ContactFormCard = () => (
   <div className="bg-white dark:bg-[#162231] shadow-xl rounded-2xl p-6 md:p-12">
-    <h2 className="text-2xl md:text-[45px] leading-none font-bold mb-4">
+    <h2 className="text-2xl md:text-[55px] leading-none font-bold mb-4">
       Get in <span className="text-orange-500 ">touch</span>{" "}
     </h2>
-    <p className="text-lg mb-12">we would be happy to hear from you</p>
+    <p className="body_text mb-12">we would be happy to hear from you</p>
 
     <ContactForm />
   </div>

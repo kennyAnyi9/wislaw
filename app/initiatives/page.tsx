@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Inititatives() {
   return (
-    <div className=" flex min-h-screen flex-col gap-32 justify-center p-20 relative top-20">
+    <div className="flex min-h-screen flex-col gap-32 relative top-28 mb-10 ">
       <Init />
     </div>
   );

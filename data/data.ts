@@ -143,18 +143,12 @@ export const board: memberProps[] = [
   {
     image: "/images/david.webp",
     name: "Fianu David Dzotsi",
-    position: "Secretary",
+    position: "Managing Director",
     url: "https://www.linkedin.com/in/fianu-david-dzotsi-82a3601b1/",
   },
 ];
 
 export const members: memberProps[] = [
-  {
-    image: "/images/david.webp",
-    name: "Fianu David Dzotsi",
-    position: "Manager",
-    url: "https://www.linkedin.com/in/fianu-david-dzotsi-82a3601b1/",
-  },
   {
     image: "/images/mercy.png",
     name: "Mercy Adoley Quaye",

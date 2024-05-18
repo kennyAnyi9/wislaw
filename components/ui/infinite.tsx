@@ -91,8 +91,10 @@ export const InfiniteMovingCards = ({
               aria-hidden="true"
               className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
             ></div>
+
             <div className="mx-5 rounded-sm  h-[20rem] w-[16rem] mb-10 lg:hover:translate-x-2 transition-all duration-500 ease-in-out ">
               <div className="relative h-full w-full">
+                <div className="absolute h-full w-full bg-black z-10 opacity-25  rounded-sm"></div>
                 <div className="aspect-w-4 aspect-h-5">
                   <Image
                     alt="staff"
