@@ -8,7 +8,7 @@ import {
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
-import Overview from "../components/overview";
+
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
 import Why from "../components/why";
@@ -34,7 +34,6 @@ export {
   Navigation,
   Dropdown,
   Slide,
-  Overview,
   Analytics,
   Beneficiaries,
   Why,
