@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import React from "react";
-import { Button } from "../lib/exports";
 import Link from "next/link";
 
 const PageNotFound = () => {

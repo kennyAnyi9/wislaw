@@ -32,7 +32,7 @@ export function Slide() {
             & <br className="lg:hidden" />
             Support Fund
           </motion.p>
-          <p className="text-gray-300  text-xl line-clamp-4 md:line-clamp-2 text-left md:text-center max-w-2xl  font-normal">
+          <p className="text-gray-300  text-xl text-left md:text-center max-w-2xl  font-normal">
             Wislaw Education and Support Fund, founded in 2007 is a development
             and social enterprise-oriented organisation based in Nsuta-Tarkwa,
             in the Western region of Ghana.

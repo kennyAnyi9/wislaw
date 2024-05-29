@@ -9,17 +9,6 @@ export interface ButtonProps
   className?: string;
 }
 
-export interface slideProps {
-  url: string;
-
-  caption1: string;
-  caption2: string;
-  caption3: string;
-  caption4: string;
-  caption5: string;
-  button: string;
-  href: string;
-}
 export interface navigationProps {
   href: string;
   route: string;
@@ -31,18 +20,12 @@ export interface ButtonProps
   className?: string;
 }
 
-export interface slideProps {
-  url: string;
-
-  caption1: string;
-  caption2: string;
-  caption3: string;
-  caption4: string;
-  caption5: string;
-  button: string;
-  href: string;
+export interface foundersProps {
+  id: number;
+  name: string;
+  designation: string;
+  image: string;
 }
-
 export interface AnalyticsDataProps {
   value: number;
   label: string;

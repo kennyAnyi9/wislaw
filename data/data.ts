@@ -3,7 +3,7 @@ import {
   InitProps,
   InitiativesProps,
   beneficiaryProps,
-  donateProps,
+  foundersProps,
   memberProps,
   navigationProps,
 } from "@/lib/types";
@@ -16,67 +16,44 @@ export const links: navigationProps[] = [
   // { href: "/news", route: "News" },
 ];
 
-// export const slideImages: slideProps[] = [
-//   // {
-//   //   url: '/images/dark.jpg',
-
-//   //   caption1: ' Level Up Your   ',
-//   //   caption2: '   Coding ',
-//   //   caption3: ' Skills with',
-//   //   caption4: 'Our Web Programming',
-//   //   caption5: 'Course',
-//   //   button: 'Enroll Now',
-//   //   href: '/digital',
-//   // },
-//   {
-//     url: "/images/first_slide.jpg",
-
-//     caption1:
-//       " Helping to empower kids with a tech-oriented approach to problem-solving",
-//     caption2: "  ",
-//     caption3: "  ",
-//     caption4: "",
-//     caption5: "",
-//     button: "Learn more",
-//     href: "/innitiatives",
-//   },
-//   {
-//     url: "/images/v1.jpg",
-//     caption1:
-//       "Empowering The Youth Through Technical and Vocational Education Training ",
-//     caption2: "",
-//     caption3: "",
-//     caption4: " ",
-//     caption5: "  ",
-//     button: "Learn More",
-//     href: "/innitiatives",
-//   },
-//   {
-//     url: "/images/new-slide.jpg",
-
-//     caption1:
-//       " Empowering the youth with skills to thrive in the 21st century ",
-//     caption2: "   ",
-//     caption3: "  ",
-//     caption4: " ",
-//     caption5: "",
-//     button: "Learn more",
-//     href: "/innitiatives",
-//   },
-//   {
-//     url: "/images/ent1.jpg",
-
-//     caption1:
-//       " Helping entrepreneurs apply innovation and technology to their businesses ",
-//     caption2: "    ",
-//     caption3: "  ",
-//     caption4: " ",
-//     caption5: "",
-//     button: "Learn more",
-//     href: "/innitiatives",
-//   },
-// ];
-
+export const founders: foundersProps[] = [
+  {
+    id: 1,
+    name: "Wisdom Adjei-Mensah",
+    designation: "Founder/Executive Director",
+    image: "/images/wisdom.webp",
+  },
+  {
+    id: 2,
+    name: "Lawrencia Adjei-Mensah",
+    designation: "Co-Founder",
+    image: "/images/Lawrencia.jpg",
+  },
+  {
+    id: 3,
+    name: "Edward Kwaku Kassah",
+    designation: "Member",
+    image: "/images/edward.webp",
+  },
+  {
+    id: 4,
+    name: "Fianu David Dzotsi",
+    designation: "General Manager",
+    image: "/images/david.webp",
+  },
+  {
+    id: 5,
+    name: "Listowell Peter Krah",
+    designation: "Finance Lead",
+    image: "/images/Daddy_k.jpg",
+  },
+  {
+    id: 6,
+    name: "Mercy Adoley Quaye",
+    designation: "Tech Lead",
+    image: "/images/mercy.png",
+  },
+];
 export const AnalyticsData: AnalyticsDataProps[] = [
   {
     value: 100,
@@ -235,27 +212,5 @@ export const init: InitProps[] = [
     title: "Community Economic & Livelihoods(CEL) Skills Training",
     desctiption:
       "CEL skils training is a program that aims to empower the local people in selected communities with the skills and resources they need to improve their economic and social well-being. The program is part of Wislaw’s vision to create opportunities for Ghana’s sustainable development through technology and innovation by adopting a holistic and inclusive approach that considers the needs, aspirations, and potentials of the participants. By providing training in various areas such as digital literacy, entrepreneurship, financial literacy, agribusiness, and vocational skills through funding, mentorship, networking, and market linkages for the participants, We hope to inspire and support the participants to become agents of change in their communities and contribute to the national development agenda.",
-  },
-];
-
-export const donate: donateProps[] = [
-  {
-    id: 1,
-    title: "Donate by check in Ghana",
-    description:
-      "check in must be made payable to wislaw eduction and support fund. Mail your check to:",
-    details: "PO Box HP NaN",
-  },
-  {
-    id: 2,
-    title: "Donate by bank transfer in Ghana",
-    description: "",
-    details: "details 2",
-  },
-  {
-    id: 3,
-    title: "Donate by gifting",
-    description: "",
-    details: " details three",
   },
 ];

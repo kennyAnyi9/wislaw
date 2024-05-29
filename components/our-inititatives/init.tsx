@@ -10,7 +10,8 @@ const Init = () => {
           <section
             className={`flex flex-col  ${
               index % 2 === 0 ? " lg:flex-row" : " lg:flex-row-reverse"
-            } w-11/12 mx-auto lg:w-4/5 gap-10 lg:gap-28 mb-20`}
+            } w-11/12 mx-auto lg:w-4/5 gap-10 lg:gap-28 mb-2000
+            `}
           >
             <div className="w-11/12 lg:w-2/5 relative h-[15rem] mx-auto lg:h-[40rem]">
               <Image

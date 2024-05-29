@@ -1,7 +1,4 @@
-import Motion, { childVariants } from "@/app/framer";
 import { members } from "@/data/data";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { InfiniteMovingCards } from "../ui/infinite";
 

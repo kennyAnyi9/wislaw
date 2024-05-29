@@ -1,7 +1,6 @@
 import {
   navigationProps,
   ButtonProps,
-  slideProps,
   AnalyticsDataProps,
   beneficiaryProps,
   memberProps,
@@ -9,8 +8,7 @@ import {
 } from "./types";
 import Dropdown from "../components/navigations/mobile-dropdown";
 import Navigation from "../components/navigations/navigation-bar";
-import Button from "../components/buttons/button";
-import Overview from "../components/overview";
+
 import { Analytics } from "../components/analytics";
 import Beneficiaries from "../components/beneficiaries";
 import Why from "../components/why";
@@ -27,7 +25,6 @@ import CallToDonate from "@/components/landing/call-to-donate";
 export type {
   navigationProps,
   ButtonProps,
-  slideProps,
   AnalyticsDataProps,
   beneficiaryProps,
   memberProps,
@@ -37,8 +34,6 @@ export {
   Navigation,
   Dropdown,
   Slide,
-  Button,
-  Overview,
   Analytics,
   Beneficiaries,
   Why,

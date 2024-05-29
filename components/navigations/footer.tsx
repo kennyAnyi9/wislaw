@@ -6,11 +6,11 @@ export const Footer = () => {
     <>
       <footer className=" bg-gray-950 text-gray-200 py-12 sm:py-16">
         <div className="container mx-auto px-4  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
-          <div className="flex flex-col  w-fit">
+          <div className="flex flex-col ">
             <div className="flex items-center mb-4">
               <span className="text-2xl font-bold">WISLAW</span>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="body_text mb-4">
               Wislaw Education and Support Fund, founded in 2007 is a
               development and social enterprise-oriented organisation based in
               Nsuta-Tarkwa, in the Western region of Ghana.
@@ -21,7 +21,10 @@ export const Footer = () => {
             <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link.href}>
-                  <Link className="hover:text-blue-500" href={link.href}>
+                  <Link
+                    className="hover:text-blue-500 body_text"
+                    href={link.href}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -32,8 +35,8 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               {contactInfo.map((info) => (
-                <div key={info.label} className="flex flex-row">
-                  <info.icon className="h-5 w-5 mr-2" />
+                <div key={info.label} className="body_text flex flex-row">
+                  <info.icon className="size-7 mr-2" />
                   <span>{info.label}</span>
                 </div>
               ))}
@@ -43,18 +46,14 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  className="text-blue-500 hover:text-blue-400"
-                  href={link.href}
-                >
-                  <link.icon className="h-6 w-6" />
+                <Link key={link.href} className="body_text" href={link.href}>
+                  <link.icon className="size-7" />
                 </Link>
               ))}
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center text-gray-400 text-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center body_text">
           &copy; Wislaw {new Date().getFullYear()} . All rights reserved
         </div>
       </footer>
@@ -154,7 +153,7 @@ const links: LinkItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-  { href: "/news", label: "News" },
+  // { href: "/news", label: "News" },
   { href: "/donate", label: "Donate" },
 ];
 

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { Loader2 } from "lucide-react";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -168,6 +169,7 @@ const ContactForm = () => {
               : null;
           }}
         >
+          {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
           {!loading ? "Send" : "Sending..."}
         </button>
       </form>
