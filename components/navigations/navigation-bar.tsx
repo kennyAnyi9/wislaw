@@ -18,12 +18,13 @@ const Navigation = () => {
         <div className="z-50 m-auto flex h-20  w-10/12 flex-row justify-between">
           <div className="flex items-center">
             <Link href="/">
-              <div className="relative right-5 ">
+              <div className="relative right-5 w-auto h-auto">
                 <Image
                   alt="logo"
                   height="100"
                   width="120"
                   src="/images/wislaw.png"
+                  priority
                 />
               </div>
             </Link>
