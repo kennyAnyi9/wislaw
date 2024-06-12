@@ -46,7 +46,6 @@ const Navigation = () => {
               ))}
             </div>
             <Button
-              asChild
               variant="ghost"
               size="lg"
               className="bg-orange-600 hover:bg-orange-500 "

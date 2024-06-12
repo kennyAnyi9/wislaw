@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import TypeIt from "typeit-react";
 
 const Donate = () => {
@@ -42,18 +43,27 @@ const Donate = () => {
         </p>
         <div className=" flex flex-row gap-5">
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="bg-transparent text-white "
           >
-            Donate once
+            <Link href="https://paystack.com/pay/wesfund" target="blank">
+              Donate once
+            </Link>
           </Button>
           <Button
             size="lg"
             variant="ghost"
+            asChild
             className="bg-orange-600 hover:bg-orange-500 outline-none"
           >
-            Donate monthly
+            <Link
+              href="https://paystack.com/pay/wesfund-recurring"
+              target="blank"
+            >
+              Recuring
+            </Link>
           </Button>
         </div>
       </section>
