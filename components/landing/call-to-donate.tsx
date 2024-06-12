@@ -16,8 +16,9 @@ const CallToDonate = () => {
       <div className="w-full  lg:w-1/5">
         <Button
           asChild
+          size={"lg"}
           variant={"outline"}
-          className="bg-transparent rounded-full px-5 font-normal text-sm md:text-lg text-white opacity-70"
+          className="bg-transparent rounded-xl px-5 font-normal text-sm md:text-lg text-white opacity-70"
         >
           <Link href="/donate">Donate here</Link>
         </Button>

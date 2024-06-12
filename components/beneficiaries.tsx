@@ -16,7 +16,7 @@ const Beneficiaries = () => {
       <section className="w-11/12 lg:w-4/5 mx-auto gap-10 mb-10 grid grid-cols-1">
         {beneficiaries.map((item, index) => (
           <Motion childVariants={childVariants} key={index}>
-            <div className="flex flex-col lg:flex-row gap-5 mx-auto justify-center  p-4 min-h-72">
+            <div className="flex flex-col lg:flex-row gap-10 mx-auto justify-center  p-4 min-h-72">
               <div className="w-full lg:w-64">
                 <Image
                   src={item.image}
