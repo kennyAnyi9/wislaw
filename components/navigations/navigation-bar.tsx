@@ -48,7 +48,8 @@ const Navigation = () => {
             <Button
               asChild
               variant="ghost"
-              className="bg-orange-600 hover:bg-orange-500"
+              size="lg"
+              className="bg-orange-600 hover:bg-orange-500 "
             >
               <Link href="/donate">DONATE</Link>
             </Button>

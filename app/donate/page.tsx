@@ -36,15 +36,20 @@ const Donate = () => {
             />
           </span>
         </h1>
-        <p className="max-w-3xl text-gray-300  text-xl  md:line-clamp-2 text-left md:text-center font-normal">
+        <p className="max-w-3xl text-gray-300  text-xl  text-left font-normal">
           Every donation empowers individuals and transforms communities. Become
           a monthly donor and witness the ongoing impact of your generosity.
         </p>
         <div className=" flex flex-row gap-5">
-          <Button variant="outline" className="bg-transparent text-white ">
+          <Button
+            size="lg"
+            variant="outline"
+            className="bg-transparent text-white "
+          >
             Donate once
           </Button>
           <Button
+            size="lg"
             variant="ghost"
             className="bg-orange-600 hover:bg-orange-500 outline-none"
           >
