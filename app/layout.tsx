@@ -23,11 +23,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navigation />
-        <Dropdown />
         {children}
-        <Footer />
-        <Toaster />
       </body>
     </html>
   );

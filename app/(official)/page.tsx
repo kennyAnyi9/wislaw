@@ -4,7 +4,7 @@ import {
   Beneficiaries,
   CallToDonate,
   Initiatives,
-} from "../lib/exports";
+} from "../../lib/exports";
 
 export default function Home() {
   return (
