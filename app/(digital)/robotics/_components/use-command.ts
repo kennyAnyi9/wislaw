@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export interface OutPut {
   command: string;
@@ -13,7 +13,6 @@ export interface CommandHandlerReturn {
   handleCommandChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleCommandSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   userData: UserData;
-  users: UserData[];
 }
 export interface UserData {
   name: string;
@@ -32,22 +31,6 @@ export default function useCommandHandler(): CommandHandlerReturn {
   const [command, setCommand] = useState("");
   const [output, setOutput] = useState<OutPut[]>([]);
   const [step, setStep] = useState(0); // Step to track the registration process
-  const [users, setUsers] = useState<UserData[]>([]);
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    try {
-      const response = await axios.get(
-        "https://wislaw-server-1.onrender.com/api/users"
-      );
-      setUsers(response.data);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-    }
-  };
 
   const initialPrompt = `Type 'register' to begin.`;
   const clearTerminal = () => {
@@ -138,7 +121,6 @@ export default function useCommandHandler(): CommandHandlerReturn {
           }
           break;
         case 5:
-        case 5:
           if (validateTelephone(command)) {
             setGuardianTel(command);
 
@@ -156,7 +138,6 @@ export default function useCommandHandler(): CommandHandlerReturn {
                   "https://wislaw-server-1.onrender.com/api/users",
                   newUser
                 );
-                await fetchUsers(); // Refresh the users list
                 superCommandHandler([
                   `Registration complete! We have your details as:
             - Full Name: ${name}
@@ -204,6 +185,5 @@ export default function useCommandHandler(): CommandHandlerReturn {
     handleCommandChange,
     handleCommandSubmit,
     userData, // Exporting current user data
-    users, // Exporting all users' data
   };
 }

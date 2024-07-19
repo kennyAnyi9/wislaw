@@ -10,7 +10,7 @@ export default function RegistrationLayout({
     <>
       <div className=" min-h-screen bg-background">
         {/* <BorderBeam size={250} duration={12} delay={9} /> */}
-        <Particles className="absolute inset-0 -z-10" />
+        <Particles className="absolute inset-0" />
         {children}
       </div>
     </>

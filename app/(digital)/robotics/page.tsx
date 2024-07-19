@@ -1,31 +1,25 @@
 import React from "react";
 import { TextGenerateEffect } from "./_components/text-generate";
 import Image from "next/image";
-import Terminal from "./_components/terminal";
+import Form from "./_components/terminal";
+import { Badge } from "@/components/ui/badge";
 
 const RoboticsPage = () => {
   return (
-    <div className="max-w-screen h-screen flex justify-center items-center bg-black">
-      <div className="mx-auto max-w-xl">
-        <Image
-          src={"/robo2.svg"}
-          alt="robot image"
-          height={100}
-          width={100}
-          className="mx-auto animate-bounce"
-        />
+    <div className="max-w-screen h-screen flex justify-center items-center flex-col lg:gap-20 lg:flex-row px-4">
+      <div className="max-w-xl">
+        <Badge variant={"outline"} className="border-blue-400 text-blue-500">
+          Did you Know?
+        </Badge>
+        <h1 className="text-7xl text-blue-500 my-3">Robotics</h1>
 
         <TextGenerateEffect
           words={
-            "Greetings, young inventor! I am wislaw bot, your friendly registration assistant. Let's embark on an exciting journey into the world of robotics! Beep Boop! Ready to become a robotics superstar? Let's get you registered!"
+            "The smallest functional robots are nanobots, which can be as tiny as a billionth of a meter."
           }
         />
-        <p className=" text-center text-xs">
-          Type <span className="text-green-500">"register"</span> below to get
-          started
-        </p>
-        <Terminal />
       </div>
+      <Form />
     </div>
   );
 };
