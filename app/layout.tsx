@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-
-import { Dropdown, Footer, Navigation } from "../lib/exports";
-import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/fonts";
-
+import { ThemeProvider } from "./theme-provider";
 export const metadata: Metadata = {
   title: "Wislaw Education & Support Fund | NGO",
   description: "non-profit organization",
@@ -23,11 +20,14 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <Navigation />
-        <Dropdown />
-        {children}
-        <Footer />
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

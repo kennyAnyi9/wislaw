@@ -1,4 +1,4 @@
-import { Staff, Why, Board, Hero } from "../../lib/exports";
+import { Staff, Why, Board, Hero } from "../../../lib/exports";
 
 const AboutUs = () => {
   return (
