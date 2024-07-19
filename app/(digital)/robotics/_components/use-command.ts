@@ -150,7 +150,10 @@ export default function useCommandHandler(): CommandHandlerReturn {
 
             const saveUser = async () => {
               try {
-                await axios.post("http://localhost:5000/api/users", newUser);
+                await axios.post(
+                  "https://wislaw-server-1.onrender.com",
+                  newUser
+                );
                 await fetchUsers(); // Refresh the users list
                 superCommandHandler([
                   `Registration complete! We have your details as:
