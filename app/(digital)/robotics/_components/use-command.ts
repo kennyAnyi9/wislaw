@@ -40,7 +40,9 @@ export default function useCommandHandler(): CommandHandlerReturn {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://wislaw-server-1.onrender.com");
+      const response = await axios.get(
+        "https://wislaw-server-1.onrender.com/api/users"
+      );
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -151,7 +153,7 @@ export default function useCommandHandler(): CommandHandlerReturn {
             const saveUser = async () => {
               try {
                 await axios.post(
-                  "https://wislaw-server-1.onrender.com",
+                  "https://wislaw-server-1.onrender.com/api/users",
                   newUser
                 );
                 await fetchUsers(); // Refresh the users list
