@@ -8,7 +8,7 @@ export default function Terminal() {
     useCommandHandler();
 
   return (
-    <div className="w-full relative z-20 h-44 mx-auto overflow-auto border backdrop-blur-[4px] rounded-md border-[#181818] no-scrollbar">
+    <div className="w-full relative z-20 h-64 mx-auto overflow-auto borde bg-[#323232] backdrop-blur-[4px] rounded-md border-[#181818] no-scrollbar">
       <div className="mt-4">
         {/* Output area */}
         {output.map((item, index) => (
@@ -28,15 +28,13 @@ export default function Terminal() {
         ))}
         {/* Input area */}
         <form onSubmit={handleCommandSubmit} className="flex gap-2 ">
-          <p className=" text-sm text-gray-600 dark:text-gray-400 pl-3 ">
-            {"$"}
-          </p>
+          <p className=" text-sm text-green-400 pl-3 ">{"$"}</p>
           <input
             type="text"
-            className="w-full text-opacity-25 text-sm text-gray-600 dark:text-gray-400 bg-transparent border-none focus:outline-none caret-green-400 font-mono"
+            className="w-full text-opacity-25 text-xs bg-transparent border-none focus:outline-none caret-green-400 font-mono"
             value={command}
             autoFocus
-            placeholder="start typing here"
+            placeholder="click here to type"
             onChange={handleCommandChange}
           />
         </form>
