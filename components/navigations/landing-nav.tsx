@@ -2,19 +2,18 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { BadgeDestructive } from "../destruct";
 
-const Navigation = () => {
+const LandingNav = () => {
   const pathname = usePathname();
 
   const [open, setOpen] = useState(false);
   return (
-    <header className=" hidden lg:flex justify-center items-center">
-      <section className="max-w-screen fixed top-0 z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
+    <header className="bg-black hidden lg:flex justify-center items-center">
+      <section className="max-w-screen relative top-0 z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
         <div className="z-50 m-auto flex h-20  w-10/12 flex-row justify-between">
           <div className="flex items-center">
             <Link href="/">
@@ -36,7 +35,7 @@ const Navigation = () => {
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  className={`text-muted-foreground hover:text-orange-400 font-normal ${
+                  className={`text-gray-100 hover:text-orange-400 font-normal ${
                     pathname === link.href ? "text-orange-500" : ""
                   }`}
                   href={link.href}
@@ -77,7 +76,7 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default LandingNav;
 
 /*
 

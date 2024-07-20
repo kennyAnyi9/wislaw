@@ -123,7 +123,7 @@ export default function Form() {
         <CardHeader>
           <CardTitle className="text-center">Register</CardTitle>
           <CardDescription className="text-center">
-            Create a new account
+            Fill the form to register for our robotics lessons
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit(onSubmit)}>

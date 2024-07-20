@@ -13,7 +13,7 @@ export const Analytics = () => {
 
   return (
     <div
-      className="relative  flex flex-col lg:flex-row py-10 w-screen gap-10 lg:gap-0 mx-auto h-fit  lg:h-[30rem]  justify-center items-center"
+      className="relative  flex flex-col lg:flex-row py-10 w-screen gap-10 lg:gap-0 mx-auto h-fit  lg:h-[35rem]  justify-center items-center"
       ref={ref}
     >
       <section className="w-11/12 lg:w-1/2 text-white grid grid-cols-2  gap-5 m-auto">
