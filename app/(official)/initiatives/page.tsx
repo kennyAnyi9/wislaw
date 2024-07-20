@@ -12,7 +12,7 @@ export default function Inititatives() {
         <Badge variant={"destructive"} className="w-fit mx-auto text-4xl">
           Soon
         </Badge>
-        <h1 className="text-foreground text-2xl">Under contruction 🚧</h1>
+        <h1 className="text-foreground text-2xl">Under construction 🚧</h1>
       </div>
 
       {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
