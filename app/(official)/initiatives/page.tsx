@@ -2,13 +2,20 @@ import { Init } from "@/lib/exports";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import React from "react";
-import { cn } from "@/lib/utils";
-import GridPattern from "@/components/magicui/grid-pattern";
+import { Badge } from "@/components/ui/badge";
 
 export default function Inititatives() {
   return (
     <div className="relative top-20 flex flex-col min-h-dvh">
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
+      <div className="m-auto flex flex-col gap-2 ">
+        {" "}
+        <Badge variant={"destructive"} className="w-fit mx-auto text-4xl">
+          Soon
+        </Badge>
+        <h1 className="text-foreground text-2xl">Under contructions 🚧</h1>
+      </div>
+
+      {/* <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600">
         <div className="container px-4 md:px-6 text-center text-foreground">
           <div className="max-w-3xl mx-auto space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -63,7 +70,7 @@ export default function Inititatives() {
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
         <Init />
-      </section>
+      </section> */}
     </div>
   );
 }
