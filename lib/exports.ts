@@ -6,7 +6,7 @@ import {
   memberProps,
   donateProps,
 } from "./types";
-import Dropdown from "../components/navigations/mobile-dropdown";
+
 import Navigation from "../components/navigations/navigation-bar";
 
 import { Analytics } from "../components/analytics";
@@ -32,7 +32,6 @@ export type {
 };
 export {
   Navigation,
-  Dropdown,
   Slide,
   Analytics,
   Beneficiaries,

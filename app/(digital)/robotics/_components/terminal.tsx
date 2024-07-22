@@ -123,7 +123,7 @@ export default function Form() {
         <CardHeader>
           <CardTitle className="text-center">Register</CardTitle>
           <CardDescription className="text-center">
-            Create a new account
+            Fill the form to register for our robotics lessons
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -187,7 +187,10 @@ export default function Form() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full">
+            <Button
+              type="submit"
+              className="w-full bg-blue-600 hover:bg-blue-500"
+            >
               {isSubmitting ? <Loading /> : "Register"}
             </Button>
           </CardFooter>

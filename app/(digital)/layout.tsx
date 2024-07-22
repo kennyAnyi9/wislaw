@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Particles } from "./robotics/_components/particles";
+import { ThemeProvider } from "../theme-provider";
 
 export default function RegistrationLayout({
   children,

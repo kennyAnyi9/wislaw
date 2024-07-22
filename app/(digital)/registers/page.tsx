@@ -38,7 +38,10 @@ const RegistersPage = () => {
     );
 
   return (
-    <div className="z-20 max-w-4xl mx-auto flex justify-center items-center min-h-screen">
+    <div className="z-20 px-5 max-w-4xl mx-auto  justify-center items-center min-h-screen flex flex-col">
+      <h1 className="text-3xl lg:text-4xl font-bold mb-5 lg:mb-10 text-center">
+        Registered Robotics Students
+      </h1>
       <RegisteredUsers users={users} />
     </div>
   );

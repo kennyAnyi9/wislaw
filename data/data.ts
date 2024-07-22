@@ -139,29 +139,29 @@ export const members: memberProps[] = [
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
   // {
-  //   image: "/images/wisdom.webp",
+  //   image: "/images/.jpg",
   //   name: "Joel Nsafoah",
   //   position: "Media Lead",
   //   url: "https://www.linkedin.com/in/joel-nsafoah-80a36b217/",
   // },
-  // {
-  //   image: "/images/wisdom.webp",
-  //   name: "Oswald Ayepah",
-  //   position: "Media",
-  //   url: "https://www.linkedin.com/in/oswald-ayepah-652828232/",
-  // },
+  {
+    image: "/images/oswald.jpg",
+    name: "Oswald Ayepah",
+    position: "Media",
+    url: "https://www.linkedin.com/in/oswald-ayepah-652828232/",
+  },
   {
     image: "/images/kennedy.webp",
     name: "Kennedy Anyidoho",
     position: "Volunteer",
     url: "https://www.linkedin.com/in/kennedy-anyidoho-32669723a",
   },
-  // {
-  //   image: "/images/wisdom.webp",
-  //   name: "Janet Frimpong",
-  //   position: "Volunteer",
-  //   url: "https://www.linkedin.com/in/frimpong-janet-b849a7245",
-  // },
+  {
+    image: "/images/janet.jpg",
+    name: "Janet Frimpong",
+    position: "Volunteer",
+    url: "https://www.linkedin.com/in/frimpong-janet-b849a7245",
+  },
 ];
 
 export const initiatives: InitiativesProps[] = [
