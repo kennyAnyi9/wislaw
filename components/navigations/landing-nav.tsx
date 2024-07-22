@@ -2,11 +2,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
-import { BadgeDestructive } from "../destruct";
 import BasicMenu from "./hamburger";
 
 const Navigation = () => {
