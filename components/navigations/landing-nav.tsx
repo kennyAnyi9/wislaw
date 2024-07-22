@@ -2,19 +2,21 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import { Dropdown } from "@/lib/exports";
 import { links } from "@/data/data";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import { BadgeDestructive } from "../destruct";
+import BasicMenu from "./hamburger";
 
-const LandingNav = () => {
+const Navigation = () => {
   const pathname = usePathname();
 
   const [open, setOpen] = useState(false);
   return (
-    <header className="bg-black hidden lg:flex justify-center items-center">
-      <section className="max-w-screen relative top-0 z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
-        <div className="z-50 m-auto flex h-20  w-10/12 flex-row justify-between">
+    <header className="flex justify-center items-center">
+      <section className="max-w-screen relative bg-black z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
+        <div className="z-50  m-auto flex h-20 w-11/12 lg:w-10/12 flex-row justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
               <div className="relative right-5 w-auto h-auto">
@@ -30,12 +32,12 @@ const LandingNav = () => {
             {/* <BadgeDestructive /> */}
           </div>
 
-          <div className=" my-auto  gap-5 flex-row items-center justify-center text-white flex">
+          <div className=" hidden my-auto  gap-5 flex-row items-center justify-center text-white lg:flex">
             <div className="lg:flex w-96 justify-around hidden ">
               {links.map((link) => (
                 <Link
                   key={link.href}
-                  className={`text-gray-100 hover:text-orange-400 font-normal ${
+                  className={`text-foreground hover:text-orange-400 font-normal ${
                     pathname === link.href ? "text-orange-500" : ""
                   }`}
                   href={link.href}
@@ -47,7 +49,7 @@ const LandingNav = () => {
             <Button
               variant="ghost"
               size="lg"
-              className="bg-orange-600 hover:bg-orange-500 "
+              className="hidden lg:block bg-orange-600 hover:bg-orange-500 "
             >
               <Link href="/donate">DONATE</Link>
             </Button>
@@ -69,14 +71,14 @@ const LandingNav = () => {
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
           </div>
+          <BasicMenu />
         </div>
       </section>
-      {/* <Dropdown />  */}
     </header>
   );
 };
 
-export default LandingNav;
+export default Navigation;
 
 /*
 

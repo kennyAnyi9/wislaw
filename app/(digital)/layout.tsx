@@ -9,18 +9,11 @@ export default function RegistrationLayout({
 }) {
   return (
     <>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="light"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <div className=" min-h-screen bg-background">
-          {/* <BorderBeam size={250} duration={12} delay={9} /> */}
-          <Particles className="absolute inset-0" />
-          {children}
-        </div>
-      </ThemeProvider>
+      <div className=" min-h-screen bg-background">
+        {/* <BorderBeam size={250} duration={12} delay={9} /> */}
+        <Particles className="absolute inset-0" />
+        {children}
+      </div>
     </>
   );
 }

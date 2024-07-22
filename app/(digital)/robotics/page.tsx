@@ -1,6 +1,5 @@
 import React from "react";
 import { TextGenerateEffect } from "./_components/text-generate";
-import Image from "next/image";
 import Form from "./_components/terminal";
 import { Badge } from "@/components/ui/badge";
 

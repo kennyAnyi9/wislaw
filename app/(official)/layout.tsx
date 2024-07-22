@@ -1,14 +1,14 @@
 import { Toaster } from "@/components/ui/toaster";
-import { Dropdown, Footer, Navigation } from "@/lib/exports";
+import { Footer, Navigation } from "@/lib/exports";
 
 import { ReactNode } from "react";
 
 export default function OfficialLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className="">
+      <div className="max-w-screen overflow-x-hidden">
         <Navigation />
-        <Dropdown />
+
         {children}
         <Footer />
         <Toaster />
