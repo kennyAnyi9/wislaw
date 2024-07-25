@@ -13,12 +13,12 @@ const RoboticsBanner = () => {
         Robotics
       </Badge>
       <p className="text-xs text-white">
-        Out robotics initiative for JHS leavers is finally here!
+        Our robotics initiative for JHS leavers is finally here!
       </p>
 
       <Button variant="link" size="sm">
         <Link href={"/robotics"} className="text-xs text-orange-500">
-          register here{" >>"}
+          register here {" >>"}
         </Link>
       </Button>
     </header>
