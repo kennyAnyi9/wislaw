@@ -13,7 +13,7 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className="flex justify-center items-center ">
-      <section className="max-w-screen fixed top-0 z-10  w-screen overflow-x-hidden bg-transparent backdrop-blur-sm">
+      <section className="max-w-screen fixed top-0 z-10  w-screen overflow-hidden bg-transparent backdrop-blur-sm">
         <div className="z-50 m-auto flex h-20 w-11/12 lg:w-10/12 flex-row justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
@@ -44,13 +44,13 @@ const Navigation = () => {
                 </Link>
               ))}
             </div>
-            <Button
-              variant="ghost"
-              size="lg"
-              className="hidden lg:block bg-orange-600 hover:bg-orange-500 "
+            <Link
+              href="/donate"
+              className="hidden bg-orange-600 hover:bg-orange-500  lg:inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium text-primary-foreground shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              prefetch={false}
             >
-              <Link href="/donate">DONATE</Link>
-            </Button>
+              DONATE
+            </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
