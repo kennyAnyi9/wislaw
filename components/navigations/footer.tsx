@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className="flex items-center mb-4">
               <span className="text-2xl font-bold">WISLAW</span>
             </div>
-            <p className="body_text mb-4">
+            <p className="text-sm text-muted-foreground mb-4">
               Wislaw Education and Support Fund, founded in 2007 is a
               development and social enterprise-oriented organisation based in
               Nsuta-Tarkwa, in the Western region of Ghana.
@@ -23,7 +23,7 @@ export const Footer = () => {
               {links.map((link) => (
                 <li key={link.href}>
                   <Link
-                    className="hover:text-blue-500 body_text"
+                    className=" text-sm text-muted-foreground"
                     href={link.href}
                     aria-label="footer links"
                   >
@@ -37,7 +37,10 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2">
               {contactInfo.map((info) => (
-                <div key={info.label} className="body_text flex flex-row">
+                <div
+                  key={info.label}
+                  className="text-sm text-muted-foreground flex flex-row"
+                >
                   <info.icon className="size-7 mr-2" />
                   <span>{info.label}</span>
                 </div>
@@ -60,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center body_text">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 text-center text-sm text-muted-foreground">
           &copy; Wislaw {new Date().getFullYear()} . All rights reserved
         </div>
       </footer>
@@ -172,8 +175,9 @@ const links: LinkItem[] = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-  // { href: "/news", label: "News" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/donate", label: "Donate" },
+  { href: "/robotics", label: "Robotics" },
 ];
 
 export interface ContactInfo {
@@ -182,7 +186,7 @@ export interface ContactInfo {
 }
 
 const contactInfo: ContactInfo[] = [
-  { icon: PhoneIcon, label: "+233 506 20 1255" },
+  { icon: PhoneIcon, label: "+233 506 20 1255 / +233 244 635 548" },
   { icon: MailIcon, label: "info@wislawedufund.org" },
   { icon: LocateIcon, label: "Nsuta-Tarkwa, W/R Ghana" },
 ];
