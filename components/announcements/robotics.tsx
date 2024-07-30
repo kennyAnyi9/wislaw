@@ -5,22 +5,13 @@ import { Badge } from "../ui/badge";
 
 const RoboticsBanner = () => {
   return (
-    <header className="w-screen p-1 h-10 bg-blue-700 z-20 flex flex-row items-center justify-around">
-      <Badge
-        variant={"default"}
-        className="hidden lg:block rounded-full w-fit px-2 py-0.5"
-      >
-        Robotics
-      </Badge>
-      <p className="text-xs text-white">
-        Our robotics initiative for JHS leavers is finally here!
-      </p>
-
-      <Button variant="link" size="sm">
-        <Link href={"/robotics"} className="text-xs text-orange-500">
-          register here {" >>"}
+    <header className="w-screen p-1 h-10 bg-[#262626] z-20 flex flex-row items-center justify-around">
+      <span className="text-sm text-white inline-flex gap-2">
+        Robotics initiative for kids begins soon 🦾 ⚡
+        <Link href={"/robotics"} className="underline text-sm my-auto">
+          click here to register
         </Link>
-      </Button>
+      </span>
     </header>
   );
 };
