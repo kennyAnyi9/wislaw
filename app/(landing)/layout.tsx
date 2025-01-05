@@ -11,7 +11,6 @@ export default function RegistrationLayout({
   return (
     <>
       <div className=" min-h-screen flex flex-col gap-0">
-        <RoboticsBanner />
         <LandingNav />
         {children}
         <Footer />
