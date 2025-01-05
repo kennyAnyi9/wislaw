@@ -27,23 +27,4 @@ export default function Home() {
   );
 }
 
-const images = [
-  "/images/image00014.jpeg",
-  "/images/image00019.jpeg",
-  "/images/image00020.jpeg",
-  "/images/image00030.jpeg",
-  "/images/image00041.jpeg",
-  "/images/image00018.jpeg",
-  "/images/image00016.jpeg",
-  "/images/681A0037.jpg",
-  "/images/681A0013_1.jpg",
-  "/images/681A0009.jpg",
-  "/images/681A0088f.jpg",
-  "/images/681A0005.jpg",
-  "/images/681A0006.jpg",
-  "/images/681A0120.jpg",
-  "/images/681A0148.jpg",
-  "/images/681A0164.jpg",
-  "/images/681A0156.jpg",
-  "/images/681A0173.jpg",
-];
+
